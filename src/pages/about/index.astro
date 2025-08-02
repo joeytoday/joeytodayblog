@@ -1,0 +1,252 @@
+---
+import links from 'public/links.json'
+import config from 'virtual:config'
+
+import { Comment } from 'astro-pure/advanced'
+import { Button, Collapse, Spoiler, Timeline } from 'astro-pure/user'
+import PageLayout from '@/layouts/CommonPage.astro'
+import Substats from '@/components/about/Substats.astro'
+import ToolSection from '@/components/about/ToolSection.astro'
+import FriendList from '@/components/links/FriendList.astro'
+
+const headings = [
+  { depth: 2, slug: 'hobbies', text: 'Hobbies' },
+  { depth: 2, slug: 'tools', text: 'Tools' },
+  { depth: 2, slug: 'social-networks', text: 'Social Networks' },
+  { depth: 2, slug: 'gossips', text: 'Gossips' },
+  { depth: 2, slug: 'about-blog', text: 'About Blog' }
+]
+
+const { friends } = links
+const linksConf = config.integ.links
+---
+
+<PageLayout title='About Me 关于我' {headings} info='/about'>
+
+  <p>👏 Welcome to my digital garden! 欢迎来到我的博客～</p>
+  <p>
+    相见即是缘分！诚心祝福你，捱得到新天地。<br/>
+    如果你是新朋友，欢迎查看更多关于我的信息～欢迎扫描下方二维码关注我的公众号 👇
+    <img src="https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202501112218896.jpg" width="200px">
+  </p>
+  <p>
+    📌 Show, not tell. 
+    <Spoiler> 🎉 这里是彩蛋内容：祝你今日开心！</Spoiler>
+  </p>
+  
+  {/* 赞助按钮，跳转 Projects 页面赞助标题下*/}
+  <!-- <Button title='Sponsor Me' class='w-fit' href='/projects#sponsorship' style='ahead' /> -->
+
+  {/* 音乐播放器 */}
+  <p>🎵 接下来可以听着音乐继续看：</p>
+
+  <p style="text-align: center;" >
+    <iframe 
+    style="border: none; margin: 0;" 
+    width=100%
+    height=86 
+    src="//music.163.com/outchain/player?type=2&id=1359470247&auto=1&height=66"/>
+  </p>
+
+
+  {/* general-talk */}
+  <h2 id='hobbies'>Hobbies 我的爱好</h2>
+  <ul>
+    <li>📖 喜欢阅读与电影，经常写随笔，也经常放鸽子。</li>
+    <li>✈️ 喜欢宅家，但也爱旅行，若有喜爱的朋友相伴，是美事一桩～</li>
+    <li>🎈 日常 J 人，出门就变 P，主打一个什么都行，开心就好!</li>
+    <li>🐈 家有傲娇小猫，名曰「兜兜」，不粘人但喜欢人，喜欢被拍拍，但最喜欢我（我自封），附上兜兜美照。</li>
+  </ul>
+
+  <img src="https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508020135822.jpeg" width=90%>
+
+  {/* tools */}
+  <h2 id='tools'>Tools</h2>
+  <p>Current support tools as follow:</p>
+
+  <ToolSection
+    class='mb-5'
+    title='Productivity'
+    tools={[
+      {
+        name: 'Notion',
+        description: '个人系统｜书影管理｜项目管理',
+        href: 'https://joeytoday.notion.site/',
+        icon: import('@/assets/tools/notion.svg?raw')
+      },
+      {
+        name: 'Obsidian',
+        description: '写作｜日记｜笔记｜思考',
+        href: 'https://joeyposts.vercel.app/',
+        icon: import('@/assets/tools/obsidian.svg?raw')
+      },
+      {
+        name: '微信读书',
+        description: '丰富书库｜随处阅读',
+        href: 'https://weread.qq.com/',
+        icon: import('@/assets/tools/weread-logo.svg?raw')
+      },
+      {
+        name: 'Readwise Reader',
+        description: '网络文章稍后读｜订阅 RSS 源',
+        href: 'https://readwise.io/read',
+        icon: import('@/assets/tools/readwise-logo.svg?raw')
+      },
+      {
+        name: 'Calflow',
+        description: '时间记录｜日程管理｜原生 iOS 支持',
+        href: 'https://calflow.app/',
+        icon: import('@/assets/tools/calflow-logo.svg?raw')
+      },
+      {
+        name: 'flomo',
+        description: '碎片化记录｜洞察回顾｜灵感思考',
+        href: 'https://flomoapp.com/',
+        icon: import('@/assets/tools/flomo-logo.svg?raw')
+      }
+    ]}
+  />
+
+  <ToolSection
+    class='mb-5'
+    title='Device'
+    tools={[
+      {
+        name: '💻 MacBook Air M3',
+        description: 'Personal computer 个人电脑',
+        href: 'https://support.apple.com/zh-cn/118551',
+        icon: import('@/assets/tools/apple.svg?raw')
+      },
+      {
+        name: '📱 iPhone 14 Pro',
+        description: '使用手机',
+        href: 'https://support.apple.com/zh-cn/111849',
+        icon: import('@/assets/tools/iPhone.svg?raw')
+      },
+      {
+        name: '📖 iReader Ocean 3 Turbo',
+        description: '阅读电子书',
+        href: 'https://item.jd.com/100046103416.html',
+        icon: import('@/assets/tools/iReader.svg?raw')
+      },
+      {
+        name: '📷 Fuji XT30-II',
+        description: '日常使用相机',
+        href: 'https://www.fujifilm-x.com/zh-cn/products/cameras/x-t30-ii/',
+        icon: import('@/assets/tools/fuji.svg?raw')
+      }
+    ]}
+  />
+
+
+  {/* social-networks 文件在 public/links.json */}
+  <h2 id='social-networks'>Social Networks 社交媒体</h2>
+  <p>
+    👏 欢迎关注～
+  </p>
+
+  <FriendList list={friends[3]} />
+
+
+<!--   <Substats
+    stats={[
+      {
+        platform: '豆瓣 ↗︎',
+        icon: 'hashtag',
+        link: 'https://www.douban.com/people/147872735/',
+        //text: '访问主页',
+        //api: 'github/cworld1'
+      },
+      {
+        platform: '小红书',
+        icon: 'tag-2',
+        //color: '#2ca5e0',
+        link: 'https://www.xiaohongshu.com/user/profile/59dda42e44363b2e63937e31',
+        //text: 'subscribers',
+        //api: 'telegram/cworld0_cn'
+      },
+      {
+        platform: 'Weibo',
+        icon: 'weibo',
+        color: '#e71f19',
+        link: 'https://weibo.com/cworld0',
+        text: 'followers',
+        api: 'weibo/5501674056'
+      },
+      {
+        platform: 'Steam',
+        icon: 'steam',
+        color: '#50769d',
+        link: 'https://steamcommunity.com/id/cworld',
+        text: 'games',
+        api: 'steamgames/76561199021278120'
+      }
+    ]}
+  /> -->
+
+  {/* gossips */}
+  <h2 id='gossips'>Gossips 碎碎念</h2>
+  <Collapse title='碎碎念'>
+    其实这里的文字只是为了凑这个模块，嘿嘿，看来你打开了这里 😊
+  </Collapse>
+
+  {/* about-blog */}
+  <h2 id='about-blog'>About Blog｜关于此博客</h2>
+  <p>Website history</p>
+  <Timeline
+    events={[
+      {
+        date: '2025-07-31',
+        content:
+          '本站初步建立'
+      },
+
+      // {
+      //   date: '2024-07-26',
+      //   content:
+      //     'Website abstracted as a theme and published on <a href="https://github.com/cworld1/astro-theme-pure"target="_blank">Github</a>'
+      // }
+    ]}
+  />
+  <hr>
+  <p>
+    本站出于我一时的热情建立，熬了两个通宵终于初步完成了，希望能成为我记录生活的开始。</br>
+    有点类似千禧年代的互联网精神，开源的、互联的，现在想来有点浪漫～</br>
+    搭建有点辛苦，但过程很开心，希望各位网友也阅读开心！🎉 撒花
+  </p>
+
+
+ <!--  <p>
+    The smooth operation and personalized customization of website also rely on the resources and
+    technical support provided by the following excellent projects/service providers:
+  </p>
+  <ul>
+    <li>Domain: <a href='#' target='_blank'>Vercel</a></li>
+    <li>
+      Framework & Theme: <a href='https://astro.build/' target='_blank'>Astro</a> + <a
+        href='https://github.com/cworld1/astro-theme-pure'
+        target='_blank'>Astro Theme Pure</a
+      >
+    </li>
+    <li>
+      Site hosting: <a href='https://vercel.com/' target='_blank'>Vercel</a>
+    </li>
+    <li>
+      CI/CD: <a href='https://vercel.com/workflow' target='_blank'>Vercel Workflow</a>
+    </li>
+    <li>Resources speedup: <a href='https://cdn.cbd.int/' target='_blank'>CBD CDN</a></li>
+    <li>Comment system: <a href='https://waline.js.org' target='_blank'>Waline</a></li>
+    <li>
+      Visits: <a href='https://supabase.com/' target='_blank'>Supabase</a> +
+      <a href='https://waline.js.org/' target='_blank'>Waline</a>
+    </li>
+    <li>
+      Other statistics: <a href='https://github.com/spencerwooo/substats' target='_blank'
+        >Substats</a
+      >
+    </li>
+ -->
+
+  </ul>
+  <Comment slot='bottom' />
+</PageLayout>
