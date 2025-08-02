@@ -18,11 +18,13 @@
         }
       ]
     },
+    
     {
       "id_name": "inactive-links",
       "desc": "Inactive or rule-breaking friends",
       "link_list": []
     },
+
     {
       "id_name": "special-links",
       "desc": "Other special links",
@@ -38,8 +40,34 @@
           "intro": "随机前往开往的成员博客",
           "link": "https://www.travellings.cn/go.html",
           "avatar": "https://www.travellings.cn/assets/travelling.png"
+        },
+        {
+          "name": "BlogFinder",
+          "intro": "聚合优秀个人博客",
+          "link": "https://bf.zzxworld.com/s",
+          "avatar": "https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508020204279.png"
+        }
+      ]
+    },
+
+    {
+      "id_name": "cf-links",
+      "desc": "Common links included in circle friends",
+      "link_list": [
+        {
+          "name": "豆瓣",
+          "intro": "我的阅读和观影 🎬",
+          "link": "https://www.douban.com/people/147872735/",
+          "avatar": "https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508012343512.svg"
+        },
+        {
+          "name": "小红书",
+          "intro": "购买 Notion 模板请看 👀",
+          "link": "https://www.xiaohongshu.com/user/profile/59dda42e44363b2e63937e31",
+          "avatar": "https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508012350936.png"
         }
       ]
     }
+
   ]
 }
