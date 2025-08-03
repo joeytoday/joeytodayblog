@@ -144,11 +144,12 @@ export const integ: IntegrationUserConfig = {
       className: 'zoomable'
     }
   },
+  
   // Comment system
   waline: {
     enable: true,
     // Server service link
-    server: 'https://astro-theme-pure-waline.arthals.ink/',
+    server: 'https://joeytoday.com/',
     // Refer https://waline.js.org/en/guide/features/emoji.html
     emoji: ['bmoji', 'weibo'],
     // Refer https://waline.js.org/en/reference/client/props.html
