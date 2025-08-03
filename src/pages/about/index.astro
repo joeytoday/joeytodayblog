@@ -72,13 +72,13 @@ const linksConf = config.integ.links
       {
         name: 'Notion',
         description: '个人系统｜书影管理｜项目管理',
-        href: 'https://www.notion.com/',
+        href: 'https://joeytoday.notion.site/',
         icon: import('@/assets/tools/notion.svg?raw')
       },
       {
         name: 'Obsidian',
         description: '写作｜日记｜笔记｜思考',
-        href: 'https://obsidian.md/',
+        href: 'https://joeyposts.vercel.app/',
         icon: import('@/assets/tools/obsidian.svg?raw')
       },
       {
@@ -148,43 +148,6 @@ const linksConf = config.integ.links
 
   <FriendList list={friends[3]} />
 
-
-<!--   <Substats
-    stats={[
-      {
-        platform: '豆瓣 ↗︎',
-        icon: 'hashtag',
-        link: 'https://www.douban.com/people/147872735/',
-        //text: '访问主页',
-        //api: 'github/cworld1'
-      },
-      {
-        platform: '小红书',
-        icon: 'tag-2',
-        //color: '#2ca5e0',
-        link: 'https://www.xiaohongshu.com/user/profile/59dda42e44363b2e63937e31',
-        //text: 'subscribers',
-        //api: 'telegram/cworld0_cn'
-      },
-      {
-        platform: 'Weibo',
-        icon: 'weibo',
-        color: '#e71f19',
-        link: 'https://weibo.com/cworld0',
-        text: 'followers',
-        api: 'weibo/5501674056'
-      },
-      {
-        platform: 'Steam',
-        icon: 'steam',
-        color: '#50769d',
-        link: 'https://steamcommunity.com/id/cworld',
-        text: 'games',
-        api: 'steamgames/76561199021278120'
-      }
-    ]}
-  /> -->
-
   {/* gossips */}
   <h2 id='gossips'>Gossips 碎碎念</h2>
   <Collapse title='碎碎念'>
@@ -192,7 +155,7 @@ const linksConf = config.integ.links
   </Collapse>
 
   {/* about-blog */}
-  <h2 id='about-blog'>About Blog｜关于此博客</h2>
+  <h2 id='about-blog'>About Blog 关于此博客</h2>
   <p>Website history</p>
   <Timeline
     events={[
@@ -202,11 +165,11 @@ const linksConf = config.integ.links
           '本站初步建立'
       },
 
-      // {
-      //   date: '2024-07-26',
-      //   content:
-      //     'Website abstracted as a theme and published on <a href="https://github.com/cworld1/astro-theme-pure"target="_blank">Github</a>'
-      // }
+      {
+        date: '2024-08-03',
+        content:
+          '本站正式对外建立，查看<a href="https://github.com/joeytoday/joeytodayblog/">本站源码</a>'
+      },
     ]}
   />
   <hr>
@@ -216,38 +179,9 @@ const linksConf = config.integ.links
     搭建有点辛苦，但过程很开心，希望各位网友也阅读开心！🎉 撒花
   </p>
 
-
- <!--  <p>
-    The smooth operation and personalized customization of website also rely on the resources and
-    technical support provided by the following excellent projects/service providers:
-  </p>
-  <ul>
-    <li>Domain: <a href='#' target='_blank'>Vercel</a></li>
-    <li>
-      Framework & Theme: <a href='https://astro.build/' target='_blank'>Astro</a> + <a
-        href='https://github.com/cworld1/astro-theme-pure'
-        target='_blank'>Astro Theme Pure</a
-      >
-    </li>
-    <li>
-      Site hosting: <a href='https://vercel.com/' target='_blank'>Vercel</a>
-    </li>
-    <li>
-      CI/CD: <a href='https://vercel.com/workflow' target='_blank'>Vercel Workflow</a>
-    </li>
-    <li>Resources speedup: <a href='https://cdn.cbd.int/' target='_blank'>CBD CDN</a></li>
-    <li>Comment system: <a href='https://waline.js.org' target='_blank'>Waline</a></li>
-    <li>
-      Visits: <a href='https://supabase.com/' target='_blank'>Supabase</a> +
-      <a href='https://waline.js.org/' target='_blank'>Waline</a>
-    </li>
-    <li>
-      Other statistics: <a href='https://github.com/spencerwooo/substats' target='_blank'
-        >Substats</a
-      >
-    </li>
- -->
-
   </ul>
   <Comment slot='bottom' />
 </PageLayout>
+ 
+
+

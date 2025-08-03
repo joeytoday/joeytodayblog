@@ -46,7 +46,7 @@ const linksConf = config.integ.links
       <div class='flex flex-col items-center gap-y-4'>
         <h1 class='text-3xl font-bold'>{config.author}</h1>
         <div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-          <Label title='Hangzhou, China'>
+          <Label title='China'>
             <Icon name='location' class='size-5' slot='icon' />
           </Label>
           <Label
@@ -125,11 +125,11 @@ const linksConf = config.integ.links
       </Section>
 
       
-
+      {/*我的项目/产品*/}
       <Section title='Pruducts'>
         <div class='grid grid-cols-1 gap-3 sm:grid-cols-2'>
           <ProjectCard
-            href='https://www.xiaohongshu.com/explore/686f48920000000017037b46?xsec_token=ABGSWRQXZpuOdav7ypGfUUzLMqXMVihgHpECZOSg2WIkc'
+            href='https://www.xiaohongshu.com/discovery/item/686f48920000000017037b46?xsec_token=ABGSWRQXZpuOdav7ypGfUUzFBADkLuy_WZ0Wc6c1sxzrc'
             heading='📚 Notion模板｜图书管理'
             subheading='书名、作者、封面、简介、分类统计，读了什么书一目了然，成就感满满 get。'
             imagePath='/src/assets/projects/202508011634233.jpeg'
@@ -141,21 +141,10 @@ const linksConf = config.integ.links
             subheading='微小习惯改变人生！按周、月、半年查看打卡记录，看见时间都去哪儿了～'
             imagePath='/src/assets/projects/202508011634053.jpeg'
           />
-
-<!--           <ProjectCard
-            href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-            heading='Lorem ipsum'
-            subheading='dolor sit amet, oratio ornatus explicari pro ex'
-            imagePath='/src/assets/projects/kseniia-zapiatkina-yATU3rg8tNI-unsplash.jpg'
-          />
-          <ProjectCard
-            href='/projects'
-            heading='More projects'
-            subheading='Check out more projects'
-            imagePath='/src/assets/projects/wen-qiao-g_w8I64FiO0-unsplash.jpg'
-          /> -->
-
+          
         </div>
+        
+        <Button title='More Products' class='w-fit self-end' href='/projects' style='ahead' />
       </Section>
 
 
@@ -171,7 +160,7 @@ const linksConf = config.integ.links
                 </li>
               ))}
             </ul>
-            <Button title='More Posts' class='w-fit self-end' href='/blog' style='ahead' />
+            <Button title='More Posts' class='w-fit self-end'href='/blog' style='ahead' />
           </Section>
         )
       }
@@ -242,7 +231,7 @@ const linksConf = config.integ.links
       </Section>
       */}
       
-      <Section title='Skills'>
+      <Section title='Tools'>
       <!--    
         <SkillLayout title='Tools' skills={languages} />
         <SkillLayout title='Frontend' skills={frontend} />
@@ -251,7 +240,7 @@ const linksConf = config.integ.links
 
         <ToolSection
           class='mb-5'
-          title='Tools'
+          title='Productivity'
           tools={[
             {
               name: 'Notion',

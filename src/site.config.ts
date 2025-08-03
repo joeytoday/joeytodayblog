@@ -52,7 +52,7 @@ export const theme: ThemeUserConfig = {
       { title: 'Products', link: '/projects' },
       { title: 'Tags', link: '/tags' },
       { title: 'Achieves', link: '/archives' },
-      { title: 'Notes', link: 'https://joeyposts.vercel.app/' },
+      //{ title: 'Notes', link: 'https://joeyposts.vercel.app/' },
       { title: 'Links', link: '/links'},
       { title: 'About', link: '/about' }
     ]
