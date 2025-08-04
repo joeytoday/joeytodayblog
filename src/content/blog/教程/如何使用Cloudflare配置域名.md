@@ -6,7 +6,7 @@ tags:
   - 教程
   - 技术
 draft: false
-publishDate: 2024-08-04
+publishDate: 2025-08-04
 ---
 
 > 前置步骤：《如何使用NameSilo购买域名？》
