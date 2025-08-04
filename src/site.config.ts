@@ -108,10 +108,10 @@ export const integ: IntegrationUserConfig = {
     ],
     // Yourself link info
     applyTip: [
-      { name: '名称', val: 'joeytoday' },
-      { name: '描述', val: 'Show, not tell.' },
-      { name: '链接', val: 'https://joeytoday.com' },
-      { name: '头像', val: 'favicon/favicon.ico' }
+      { name: 'Name', val: 'joeytoday' },
+      { name: 'Desc', val: 'Show, not tell.' },
+      { name: 'Link', val: 'https://joeytoday.com' },
+      { name: 'Favi', val: 'favicon/favicon.ico' }
     ]
   },
   // Enable page search function

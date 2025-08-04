@@ -114,14 +114,26 @@ const linksConf = config.integ.links
       
       <Section title='About'>
         <p class='text-muted-foreground'>👏 Welcome to my digital garden!</p>
-        <p class='text-muted-foreground'>
-          在这个世界寻找一点乐趣。诚心祝福你，捱得到新天地。<br/>
-          如果你是新朋友，欢迎查看更多关于我的信息～欢迎关注我的公众号 👉「偶然时刻」。
+        <p class='text-muted-foreground' style="line-height: 2;">
+          🧰 工具控，爱折腾。熟练掌握 <strong>Notion、Obsidian</strong> 等工具。
+          喜欢很多美丽而“无用”的事物， <strong>📖 书籍 & 🎬 电影 & 🎵 音乐</strong>，希望在这个世界寻找一点乐趣，
+          也<strong>「诚心祝福你，捱得到新天地」</strong>。<br/>
+          如果你是新朋友，欢迎关注我的公众号 👉<strong>「偶然时刻」</strong>。</br>
+          🎧 来都来了，听首歌吧 🎧
+        </p>
+
+        <p style="text-align: center;" >
+          <iframe 
+          style="border: none; margin: 0;" 
+          width=100%
+          height=86 
+          src="//music.163.com/outchain/player?type=2&id=2160371835&auto=1&height=66"/>
         </p>
         
 
         {/* 按钮 More */}
         <!-- <Button title=' More' class='w-fit self-end' href='/about' style='ahead' /> -->
+
       </Section>
 
       
@@ -156,7 +168,6 @@ const linksConf = config.integ.links
               {allPostsByDate.map((p) => (
                 <li class='flex flex-col gap-x-2 sm:flex-row'>
                   <PostPreview post={p} detailed />
-
                 </li>
               ))}
             </ul>
