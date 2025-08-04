@@ -9,7 +9,7 @@ tags:
   - 技术
   - 工具
   - Obsidian
-heroImage: {src: 'https://unsplash.com/photos/white-clouds-and-blue-sky-during-daytime-A9_IsUtjHm4', inferSize: true}
+heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508041918474.png', inferSize: true}
 createdDate: 2023-07-24 20:54
 updatedDate: 2025-08-01 13:56
 ---
