@@ -40,4 +40,4 @@ publishDate: 2025-08-04
 
 
 
-> 配置请参考《如何使用Cloudflare配置域名？》
+> 配置请参考[《如何使用Cloudflare配置域名？》](https://www.joeytoday.com/blog/helper/config-domain-by-cloudflare)

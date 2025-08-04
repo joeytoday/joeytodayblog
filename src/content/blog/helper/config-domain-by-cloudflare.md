@@ -9,7 +9,7 @@ draft: false
 publishDate: 2025-08-04
 ---
 
-> 前置步骤：《如何使用NameSilo购买域名？》
+> 前置步骤：[《如何使用NameSilo购买域名？》](https://www.joeytoday.com/blog/helper/purchase-domain-by-namesilo)
 
 ## 配置域名
 > [https://www.cloudflare-cn.com](https://www.cloudflare-cn.com/products/registrar/)
