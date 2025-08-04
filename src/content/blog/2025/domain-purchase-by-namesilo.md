@@ -6,6 +6,7 @@ tags:
   - 写作
   - 教程
 draft: false
+heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202412162005615.png', inferSize: true}
 publishDate: 2025-08-04
 ---
 

@@ -6,6 +6,7 @@ tags:
   - 教程
   - 技术
 draft: false
+heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508031731433.png', inferSize: true}
 publishDate: 2025-08-04
 ---
 
