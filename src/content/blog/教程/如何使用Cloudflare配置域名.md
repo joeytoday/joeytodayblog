@@ -1,12 +1,12 @@
 ---
 title: 如何使用Cloudflare配置域名？
+description: 使用Cloudflare配置域名，包括cdn加速。
 author: Joey Kai
 tags:
   - 教程
   - 技术
 draft: false
-createdDate: 2025-08-03 17:24
-updatedDate: 2025-08-03 17:24
+publishDate: 2024-08-04
 ---
 
 > 前置步骤：《如何使用NameSilo购买域名？》

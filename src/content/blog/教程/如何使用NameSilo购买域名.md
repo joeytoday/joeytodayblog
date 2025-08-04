@@ -1,12 +1,12 @@
 ---
 title: 如何使用NameSilo购买域名？
+description: 建站第一步，购买自己的域名。
 author: Joey Kai
 tags:
   - 写作
   - 教程
 draft: false
-createdDate: 2024-12-16 20:05
-updatedDate: 2025-08-02 16:12
+publishDate: 2025-08-04
 ---
 
 ### 1. 进入 NameSilo 网站
