@@ -103,7 +103,7 @@ export const integ: IntegrationUserConfig = {
   // See: https://astro-pure.js.org/docs/integrations/links
   links: {
 
-    
+
     // Friend logbook
     logbook: [
       { date: '2025-07-31', content: '本站建立' },
