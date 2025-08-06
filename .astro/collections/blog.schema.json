@@ -87,7 +87,7 @@
         },
         "comment": {
           "type": "boolean",
-          "default": true
+          "default": false
         },
         "$schema": {
           "type": "string"

@@ -82,10 +82,12 @@ export const theme: ThemeUserConfig = {
         pos: 2 // position set to 2 will be appended to copyright line
       }
     ],
+
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
     credits: true,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://github.com/joeytoday/joeytodayblog' }
+    social: { github: 'https://github.com/joeytoday/joeytodayblog' },
+    pageview: true,
   },
 
   content: {
@@ -103,7 +105,6 @@ export const integ: IntegrationUserConfig = {
   // See: https://astro-pure.js.org/docs/integrations/links
   links: {
 
-
     // Friend logbook
     logbook: [
       { date: '2025-07-31', content: '本站建立' },
@@ -119,6 +120,7 @@ export const integ: IntegrationUserConfig = {
       { name: 'Favi', val: 'favicon/favicon.ico' }
     ]
   },
+
   // Enable page search function
   pagefind: true,
   // Add a random quote to the footer (default on homepage footer)
@@ -131,6 +133,7 @@ export const integ: IntegrationUserConfig = {
     server: 'https://api.quotable.io/quotes/random?maxLength=60',
     target: `(data) => data[0].content || 'Error'`
   },
+
   // UnoCSS typography
   // See: https://unocss.dev/presets/typography
   typography: {
@@ -161,7 +164,7 @@ export const integ: IntegrationUserConfig = {
     additionalConfigs: {
       search: true,
       pageview: true,
-      comment: true,
+      comment: false,
       locale: {
         reaction0: 'Like',
         placeholder: 'Welcome to comment. (Email to receive replies. Login is unnecessary)'
