@@ -7,7 +7,7 @@ export const theme: ThemeUserConfig = {
   /** Will be used in index page & copyright declaration */
   author: 'joeytoday',
   /** Description metadata for your website. Can be used in page metadata. */
-  description: 'Show, not tell.',
+  description: 'Show, not tell. 工具、教程，熟练掌握 Notion、Obsidian 等工具。',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.ico',
   /** Specify the default language for this site. */
@@ -51,8 +51,8 @@ export const theme: ThemeUserConfig = {
       //{ title: 'Docs', link: '/docs' },
       { title: 'Products', link: '/projects' },
       { title: 'Tags', link: '/tags' },
-      { title: 'Achieves', link: '/archives' },
-      //{ title: 'Notes', link: 'https://joeyposts.vercel.app/' },
+      //{ title: 'Achieves', link: '/archives' },
+      { title: 'Notes', link: 'https://note.joeytoday.com/' },
       { title: 'Links', link: '/links'},
       { title: 'About', link: '/about' }
     ]
@@ -61,18 +61,18 @@ export const theme: ThemeUserConfig = {
   /** Configure the footer of your site. */
   footer: {
     // Year format
-    year: `© ${new Date().getFullYear()}`,
+    year: `© 2024 - ${new Date().getFullYear()}`,
     // year: `© 2019 - ${new Date().getFullYear()}`,
     links: [
       // Registration link
       {
-        title: 'joeytoday',
-        link: 'https://joeytoday.com',
+        title: 'Copyright All Servered',
+        link: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans',
         style: 'text-sm' // Uno/TW CSS class
       },
       {
-        title: 'Blog',
-        link: '',
+        title: 'Travelling',
+        link: 'https://www.travellings.cn/go.html',
         style: 'text-sm'
       },
       // Privacy Policy link
@@ -85,13 +85,13 @@ export const theme: ThemeUserConfig = {
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
     credits: true,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://github.com/joeytoday/astro-theme-pure' }
+    social: { github: 'https://github.com/joeytoday/joeytodayblog' }
   },
 
   content: {
     externalLinksContent: ' ↗',
     /** Blog page size for pagination (optional) */
-    blogPageSize: 8,
+    blogPageSize: 10,
     externalLinkArrow: true, // show external link arrow
     // Currently support weibo, x, bluesky
     share: ['weibo', 'x', "bluesky"]
@@ -102,14 +102,19 @@ export const integ: IntegrationUserConfig = {
   // Links management
   // See: https://astro-pure.js.org/docs/integrations/links
   links: {
+
+    
     // Friend logbook
     logbook: [
       { date: '2025-07-31', content: '本站建立' },
+      { date: '2025-08-03', content: '本站对外公开'}
     ],
+
+
     // Yourself link info
     applyTip: [
       { name: 'Name', val: 'joeytoday' },
-      { name: 'Desc', val: 'Show, not tell.' },
+      { name: 'Desc', val: 'Show, not tell. Thinking, Reading, Writing.' },
       { name: 'Link', val: 'https://joeytoday.com' },
       { name: 'Favi', val: 'favicon/favicon.ico' }
     ]
@@ -147,7 +152,7 @@ export const integ: IntegrationUserConfig = {
   
   // Comment system
   waline: {
-    enable: true,
+    enable: false,
     // Server service link
     server: 'https://joeytoday.com/',
     // Refer https://waline.js.org/en/guide/features/emoji.html

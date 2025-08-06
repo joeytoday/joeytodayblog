@@ -160,21 +160,9 @@ const linksConf = config.integ.links
   {/* about-blog */}
   <h2 id='about-blog'>About Blog 关于此博客</h2>
   <p>Website history</p>
-  <Timeline
-    events={[
-      {
-        date: '2025-07-31',
-        content:
-          '本站初步建立'
-      },
-
-      {
-        date: '2024-08-03',
-        content:
-          '本站正式对外建立，查看<a href="https://github.com/joeytoday/joeytodayblog/">本站源码</a>'
-      },
-    ]}
-  />
+  <!-- 内容在 site.config.ts -->
+  <Timeline events={linksConf.logbook} />
+  
   <hr>
   <p>
     本站出于我一时的热情建立，熬了两个通宵终于初步完成了，希望能成为我记录生活的开始。</br>
