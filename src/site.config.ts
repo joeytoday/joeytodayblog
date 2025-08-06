@@ -87,7 +87,6 @@ export const theme: ThemeUserConfig = {
     credits: true,
     /** Optional details about the social media accounts for this site. */
     social: { github: 'https://github.com/joeytoday/joeytodayblog' },
-    pageview: true,
   },
 
   content: {
