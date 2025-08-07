@@ -12,10 +12,10 @@ export const theme: ThemeUserConfig = {
   favicon: '/favicon/favicon.ico',
   /** Specify the default language for this site. */
   locale: {
-    lang: 'zh-CN',
-    attrs: 'zh_CN',
+    lang: 'en-US',
+    attrs: 'en_US',
     // Date locale
-    dateLocale: 'zh-CN',
+    dateLocale: 'en-US',
     dateOptions: {
       day: 'numeric',
       month: 'short',
