@@ -107,7 +107,8 @@ export const integ: IntegrationUserConfig = {
     // Friend logbook
     logbook: [
       { date: '2025-07-31', content: '本站建立' },
-      { date: '2025-08-03', content: '本站对外公开'}
+      { date: '2025-08-03', content: '本站对外公开'},
+      { date: '2025-08-8', content: '新增赞助栏' },
     ],
 
 
