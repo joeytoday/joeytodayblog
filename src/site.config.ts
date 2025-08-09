@@ -50,7 +50,7 @@ export const theme: ThemeUserConfig = {
       { title: 'Blog', link: '/blog' },
       //{ title: 'Docs', link: '/docs' },
       { title: 'Products', link: '/projects' },
-      { title: 'Tags', link: '/tags' },
+      { title: 'Tags', link: '/tags', target: '_blank', rel: 'noopener noreferrer' },
       //{ title: 'Achieves', link: '/archives' },
       { title: 'Notes', link: 'https://note.joeytoday.com/' },
       { title: 'Links', link: '/links'},
