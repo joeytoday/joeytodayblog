@@ -108,7 +108,8 @@ export const integ: IntegrationUserConfig = {
     logbook: [
       { date: '2025-07-31', content: '本站建立' },
       { date: '2025-08-03', content: '本站对外公开'},
-      { date: '2025-08-8', content: '新增赞助栏' },
+      { date: '2025-08-08', content: '新增赞助栏' },
+      { date: '2025-08-09', content: '新增友链，本博客被<a href = "https://www.travellings.cn/">「开往」</a>收录啦～' },
     ],
 
 
