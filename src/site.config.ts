@@ -117,7 +117,7 @@ export const integ: IntegrationUserConfig = {
       { name: 'Name', val: 'joeytoday' },
       { name: 'Desc', val: 'Show, not tell. Thinking, Reading, Writing.' },
       { name: 'Link', val: 'https://joeytoday.com' },
-      { name: 'Favi', val: 'favicon/favicon.ico' }
+      { name: 'Favi', val: 'https://www.joeytoday.com/_image?href=%2F_astro%2Favatar.CNCfkCan.png' }
     ]
   },
 
