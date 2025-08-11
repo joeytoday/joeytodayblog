@@ -1,12 +1,12 @@
 ---
-title: " 如何使用Astro建立个人博客网站？"
+title: " 如何使用 Astro 建立个人博客网站？"
 description: 个人建站过程记录，操作步骤详细说明。
 author: Joey Kai
 tags:
   - 技术
   - 教程
 publishDate: 2025-08-08
-heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072344430.png', inferSize: true}
+heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072344430.png', inferSize: true, color: '#EFF8F3'}
 ---
 
 最近熬了好几个大夜做了个自己的博客，看过我之前文章的朋友们都知道，我之前就有尝试过使用 Notion 搭建自己的博客，去年 12 月使用 NotionNext 这个项目购买域名做了部署的，但是，最后的结果不如人意，总有一些我看不明白的 bug，老是部署失败，而且主题可选样式太少了。
@@ -19,8 +19,9 @@ https://www.joeytoday.com/
 ```
 
 最终我选择了 Astro 框架+Pure Theme，使用 GitHub+Vercel 部署，主页效果如下，如果不想打开网页，也可以在展开大概看看～👀
-> [!abstract]- 我的主页
-> ![我的主页概览](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072201781.png)
+> #### 我的主页
+>
+> <img src="https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072201781.png" style="zoom:10%;" />
 
 # 部署过程
 大概说了下我是如何选到自己喜欢的主题的，选择使用 Astro 很大一部分原因也是帮助文档有中文的，部署也相对简单，具体部署也可以参考教程，整体来说比较简单：[入门指南 \| Docs](https://docs.astro.build/zh-cn/getting-started/)
