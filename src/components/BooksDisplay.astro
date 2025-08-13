@@ -81,7 +81,7 @@ const books: Book[] = [
   <h3>Books</h3>
   <div class="books-grid">
     {books.map((book) => (
-      <div class="book-card" key={book.id}>
+      <div class="book-card">
         <div class="book-cover-wrapper">
           <div class="book-cover-container">
             <img 
@@ -89,7 +89,6 @@ const books: Book[] = [
               alt={`${book.title} 封面`} 
               loading="lazy"
               class="zoomable"
-              inferSize={true}
             />
           </div>
         </div>
@@ -112,7 +111,7 @@ const books: Book[] = [
   <h3>Movies</h3>
   <div class="movies-grid">
     {movies.map((movie) => (
-      <div class="movie-card" key={movie.id}>
+      <div class="movie-card">
         <div class="movie-cover-wrapper">
           <div class="movie-cover-container">
             <img 
@@ -120,7 +119,6 @@ const books: Book[] = [
               alt={`${movie.title} 海报`} 
               loading="lazy"
               class="zoomable"
-              inferSize={true}
             />
           </div>
         </div>
