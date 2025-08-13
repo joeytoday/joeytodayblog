@@ -8,6 +8,7 @@ import PageLayout from '@/layouts/CommonPage.astro'
 import Substats from '@/components/about/Substats.astro'
 import ToolSection from '@/components/about/ToolSection.astro'
 import FriendList from '@/components/links/FriendList.astro'
+import BooksDisplay from '@/components/BooksDisplay.astro';
 
 const headings = [
   { depth: 2, slug: 'hobbies', text: 'Hobbies' },
@@ -63,6 +64,9 @@ const linksConf = config.integ.links
   </ul>
 
   <img src="https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508020135822.jpeg" width=90%>
+
+  <!-- 书籍电影卡片 -->
+  <BooksDisplay />
 
   {/* tools */}
   <h2 id='tools'>Tools 我的工具</h2>
@@ -160,6 +164,7 @@ const linksConf = config.integ.links
   {/* about-blog */}
   <h2 id='about-blog'>About Blog 关于此博客</h2>
   <p>Website history</p>
+  
   <!-- 内容在 site.config.ts -->
   <Timeline events={linksConf.logbook} />
 

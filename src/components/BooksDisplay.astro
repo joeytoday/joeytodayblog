@@ -1,0 +1,258 @@
+---
+// 电影数据接口定义
+interface Movie {
+  id: string;
+  title: string;
+  cover: string;
+  releaseYear: number;
+  director: string;
+  description: string;
+}
+
+// 电影数据示例
+const movies: Movie[] = [
+  {
+    id: "m1",
+    title: "楚门的世界 The Truman Show",
+    cover: "/src/assets/cover/m1.jpg",
+    releaseYear: 1998,
+    director: "彼得·威尔",
+    description: "如果再也不能见到你，祝你早安，午安，晚安。"
+  },
+  {
+    id: "m2",
+    title: "油炸绿番茄 Fried Green Tomatoes",
+    cover: "/src/assets/cover/m2.jpg",
+    releaseYear: 1991,
+    director: "乔恩·阿维奈",
+    description: "塔旺达！"
+  },
+  {
+    id: "m3",
+    title: "女人与海 Young Woman and the Sea",
+    cover: "/src/assets/cover/m3.jpg",
+    releaseYear: 2024,
+    director: "约阿希姆·伦宁",
+    description: "游过那片充满不公的海峡，创造出属于另一半人类的历史。"
+  }
+];
+
+// 复用之前的图书数据和接口
+interface Book {
+  id: string;
+  title: string;
+  cover: string;
+  publishYear: number;
+  author: string;
+  description: string;
+}
+
+const books: Book[] = [
+  {
+    id: "1",
+    title: "女孩，女人，其他",
+    cover: "/src/assets/cover/b1.png",
+    publishYear: 2022,
+    author: "伯娜丁·埃瓦里斯托",
+    description: "我们过着截然不同的生活，但我们生活在同一个世界。"
+  },
+  {
+    id: "2",
+    title: "厌女",
+    cover: "/src/assets/cover/b2.png",
+    publishYear: 2015,
+    author: "上野千鹤子",
+    description: "看清厌女，消除厌女。"
+  },
+  {
+    id: "3",
+    title: "鼠疫",
+    cover: "/src/assets/cover/b3.jpg",
+    publishYear: 2013,
+    author: "阿尔贝·加缪",
+    description: "习惯于绝望是一件比绝望本身更可怕的事情。长相爱或共赴死，别无出路。"
+  },
+];
+---
+
+
+<!-- 左侧3栏图书 -->
+<div class="column books-column">
+  <h3>Books</h3>
+  <div class="books-grid">
+    {books.map((book) => (
+      <div class="book-card" key={book.id}>
+        <div class="book-cover-wrapper">
+          <div class="book-cover-container">
+            <img 
+              src={book.cover} 
+              alt={`${book.title} 封面`} 
+              loading="lazy"
+              class="zoomable"
+              inferSize={true}
+            />
+          </div>
+        </div>
+        
+        <div class="book-info">
+          <h4 class="book-title">{book.title}</h4>
+          <div class="book-meta">
+            <p>年份：{book.publishYear}</p>
+            <p>作者：{book.author}</p>
+          </div>
+          <p class="book-description">{book.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<!-- 右侧3栏电影 -->
+<div class="column movies-column">
+  <h3>Movies</h3>
+  <div class="movies-grid">
+    {movies.map((movie) => (
+      <div class="movie-card" key={movie.id}>
+        <div class="movie-cover-wrapper">
+          <div class="movie-cover-container">
+            <img 
+              src={movie.cover} 
+              alt={`${movie.title} 海报`} 
+              loading="lazy"
+              class="zoomable"
+              inferSize={true}
+            />
+          </div>
+        </div>
+        
+        <div class="movie-info">
+          <h4 class="movie-title">{movie.title}</h4>
+          <div class="movie-meta">
+            <p>年份：{movie.releaseYear}</p>
+            <p>导演：{movie.director}</p>
+          </div>
+          <p class="movie-description">{movie.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+<style>
+/* 两列布局容器 */
+.two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 0 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* 列标题样式 */
+.two-column-layout .column h2 {
+  color: hsl(var(--foreground));
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid hsl(var(--primary));
+  padding-bottom: 0.5rem;
+}
+
+/* 图书和电影网格通用样式 */
+.books-grid, .movies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* 封面宽度控制核心样式 */
+.book-cover-wrapper, .movie-cover-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.book-cover-container, .movie-cover-container {
+  width: 90%;
+  max-width: 120px;
+  aspect-ratio: 2/3;
+  position: relative;
+  background-color: hsl(var(--muted));
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.book-cover-container img, .movie-cover-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* 卡片通用样式 */
+.book-card, .movie-card {
+  background: hsl(var(--card));
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover, .movie-card:hover {
+  transform: translateY(-4px);
+}
+
+.book-info, .movie-info {
+  padding: 1rem;
+}
+
+.book-title, .movie-title {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: hsl(var(--foreground));
+}
+
+.book-meta, .movie-meta {
+  font-size: 0.85rem;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 0.75rem;
+}
+
+.book-description, .movie-description {
+  font-size: 0.9rem;
+  color: hsl(var(--foreground));
+  line-height: 1.5;
+}
+
+/* 响应式调整 */
+@media (max-width: 1024px) {
+  .two-column-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .books-grid, .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .books-grid, .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .books-grid, .movies-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .book-cover-container, .movie-cover-container {
+    max-width: 160px;
+  }
+}
+</style>

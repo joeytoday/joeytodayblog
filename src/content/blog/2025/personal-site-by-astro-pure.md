@@ -6,7 +6,7 @@ tags:
   - 技术
   - 教程
 publishDate: 2025-08-08
-heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072344430.png', inferSize: true, color: '#EFF8F3'}
+heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072344430.png', inferSize: true, color: '#D7E6CF'}
 ---
 
 最近熬了好几个大夜做了个自己的博客，看过我之前文章的朋友们都知道，我之前就有尝试过使用 Notion 搭建自己的博客，去年 12 月使用 NotionNext 这个项目购买域名做了部署的，但是，最后的结果不如人意，总有一些我看不明白的 bug，老是部署失败，而且主题可选样式太少了。
