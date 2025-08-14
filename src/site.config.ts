@@ -49,7 +49,7 @@ export const theme: ThemeUserConfig = {
     menu: [
       { title: 'Blog', link: '/blog' },
       //{ title: 'Docs', link: '/docs' },
-      { title: 'Products', link: '/projects' },
+      { title: 'Projects', link: '/projects' },
       { title: 'Tags', link: '/tags' },
       //{ title: 'Achieves', link: '/archives' },
       { title: 'Notes', link: 'https://note.joeytoday.com/' },

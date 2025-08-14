@@ -29,7 +29,7 @@ const { title, headings, info, ...props } = Astro.props
       info && (
         <PageInfo
           path={typeof info === 'string' ? info : info.slug}
-          hideComment={typeof info === 'object' && info.hideComment ? info.hideComment : true}
+          hideComment={typeof info === 'object' && info.hideComment ? info.hideComment : false}
           class='italic'
         />
       )

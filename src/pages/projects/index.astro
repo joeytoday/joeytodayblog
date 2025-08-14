@@ -25,7 +25,12 @@ const headings = [
 
 <!-- 项目页面完整样式：https://joeytoday.vercel.app/projects -->
 
-<PageLayout title='Projects' {headings} info={{ slug: '/projects', hideComment: false ,}}>
+<PageLayout title='Projects' {headings} 
+  info={{ 
+    slug: '/projects', 
+    hideComment: false
+  }}
+>
   
 <p>Github Activities:</p>
   <p>
@@ -37,8 +42,7 @@ const headings = [
     />
   </p>
   <p>
-    If you think it would be useful or interesting to collaborate on a project, you can donate to
-    support my work or contact me to discuss a project.
+    👇 这里是我的项目合集，如果你觉得有意思 or 对你有用的话，欢迎赞赏～
   </p>
   <Button title='Checkout sponsorship' class='w-fit' href='#sponsorship'>
     <Icon class='size-5' name='receive-money' slot='before' />
@@ -48,7 +52,6 @@ const headings = [
 
 {/* 项目列表页面 */}
 
-  <p>这里是我的项目合集 👇</p>
   <h2 id='theme'>Notion 模板</h2>
 
   <ProjectSection
