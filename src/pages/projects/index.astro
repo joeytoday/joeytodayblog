@@ -18,7 +18,6 @@ const headings = [
   // { depth: 2, slug: 'programs', text: 'Programs' },
   // { depth: 2, slug: 'learnings', text: 'Learnings' },
   // { depth: 2, slug: 'others', text: 'Others' },
-  { depth: 2, slug: 'favorite3', text: 'favorite3' },
   { depth: 2, slug: 'sponsorship', text: 'Sponsorship' }
 ]
 ---
@@ -42,7 +41,7 @@ const headings = [
     />
   </p>
   <p>
-    👇 这里是我的项目合集，如果你觉得有意思 or 对你有用的话，欢迎赞赏～
+    👇 这里是我的项目合集，如果你觉得有意思 or 对你有用的话，欢迎给作者买杯咖啡☕️～
   </p>
   <Button title='Checkout sponsorship' class='w-fit' href='#sponsorship'>
     <Icon class='size-5' name='receive-money' slot='before' />
@@ -57,26 +56,38 @@ const headings = [
   <ProjectSection
     projects={[
       {
-        image: '202508011634233.jpeg',
         name: '📚 图书管理模板',
         description: '书名、作者、封面、简介、分类统计，读书一目了然，成就感满满。',
+        image: 'notion-temp-books.jpeg',
         links: [
           //{ type: 'github', href: 'https://github.com/cworld1/astro-theme-pure' },
           { type: 'link', href: 'https://www.xiaohongshu.com/explore/686f48920000000017037b46?xsec_token=ABGSWRQXZpuOdav7ypGfUUzLMqXMVihgHpECZOSg2WIkc' },
-          { type: 'doc', href: 'https://www.joeytoday.com/blog/2025/notion-temp-books'}
+          { type: 'doc', href: 'https://www.joeytoday.com/blog/2025/notion-temp-books'},
+          { type: 'earth', href: 'https://joeytoday.notion.site/Temp-baf346805d3e491a9824651d72fac512'}
         ]
       },
 
       {
         name: '🟢 习惯打卡热力图模板',
         description: '微小习惯改变人生！按周、月、半年查看打卡热力图。',
-        image: '202508011634053.jpeg',
+        image: 'notion-temp-habits.jpeg',
         links: [
           //{ type: 'github', href: 'https://github.com/cworld1/astro-theme-pure' },
           { type: 'link', href: 'https://www.xiaohongshu.com/explore/686f4cc50000000012022873?xsec_token=ABGSWRQXZpuOdav7ypGfUUzBOdLCELpL_7slncrxwwE94' },
-          { type: 'doc', href: 'https://www.joeytoday.com/blog/2025/notion-temp-habits'}
+          { type: 'doc', href: 'https://www.joeytoday.com/blog/2025/notion-temp-habits'},
+          { type: 'earth', href: 'https://joeytoday.notion.site/Habits-Tracker-Temp-24b15b43acf0800ea8fed8b6d243ea3f'}
         ]
-      }
+      },
+      {
+        name: '🎒 个人物品管理模板',
+        description: '你拥有的东西构成了你。',
+        image: 'notion-temp-stuffs.PNG',
+        links: [
+          //{ type: 'github', href: 'https://github.com/cworld1/astro-theme-pure' },
+          { type: 'link', href: 'https://www.xiaohongshu.com/discovery/item/689584ef00000000020017de?xsec_token=ABY_OeELXbiWFQQgYftHsYt0HWQm9ZJx8RG-aR1QCx3T0' },
+          { type: 'doc', href: 'https://www.joeytoday.com/blog/weekly/032'},
+          { type: 'earth', href: 'https://joeytoday.notion.site/1e015b43acf08033a7afc17ffcb17fdd'}
+      },
     ]},
   />
 
