@@ -8,7 +8,7 @@ tags:
 publishDate: 2025-08-20
 createdDate: 2025-08-20 13:08
 updatedDate: 2025-08-20 14:18
-heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508201418537.png', inferSize: true}
+heroImage: {src: '/src/assets/projects/notion-temp-para.jpeg', inferSize: true}
 ---
 
 ## 一、被疯狂种草的 Notion 模板，到底什么样？
