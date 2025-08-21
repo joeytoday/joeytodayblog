@@ -6,9 +6,9 @@ tags:
   - 教程
   - 观点
   - 第三周刊
-heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508141314791.png', inferSize: true}
+heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508141314791.png', inferSize: true, color: '#E0D5FB'}
 publishDate: 2025-08-15
-createdDate: 2022-12-17 12:01
+createdDate: 2025-08-14 12:01
 updatedDate: 2025-08-14 13:22
 ---
 

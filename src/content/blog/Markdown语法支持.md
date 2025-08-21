@@ -1,15 +1,14 @@
 ---
 title: Markdown 语法支持
 publishDate: 2023-07-26 08:00:00
-description: 'Markdown 是一种轻量级的「标记语言」。'
+description: Markdown 是一种轻量级的「标记语言」。
 tags:
   - 工具
   - markdown
-heroImage: { src: './thumbnail.jpg', color: '#B4C6DA' }
-
+heroImage: {src: './thumbnail.jpg', inferSize: true, color: "#B4C6DA"}
 ---
 
-## 基本语法
+##  基本语法 
 
 Markdown 是一种轻量级且易于使用的语法，用于为您的写作设计风格。
 
