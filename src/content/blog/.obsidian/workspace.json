@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024/weekly-025.md",
+                "file": "2023/weekly-001.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "weekly-025"
+              "title": "weekly-001"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "assets",
+                "query": "202308301913982.png",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -172,6 +173,7 @@
   },
   "active": "b2b9963ee1743e76",
   "lastOpenFiles": [
+    "2024/weekly-025.md",
     "travel/20250321-hongkong.md",
     "2025/weekly-028.md",
     "2025/weekly-037-obsidian-config-AI-agent.md",
@@ -186,7 +188,6 @@
     "2024/weekly-016.md",
     "2024/weekly-027.md",
     "2024/weekly-026.md",
-    "2024/weekly-025.md",
     "2024/weekly-024.md",
     "2024/weekly-023.md",
     "2024/weekly-022.md",
