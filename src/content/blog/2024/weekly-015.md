@@ -5,7 +5,7 @@ tags:
   - 生活
   - 心理
   - 财务
-heroImage: { src: '../../assets/2024/202401171944163.jpeg', inferSize: true}
+heroImage: { src: '../assets/2024/202401171944163.jpeg', inferSize: true}
 title: 读书｜金钱心理学：没有人真的对钱失去理智
 description: 金钱是一种资源，如何赚取/使用资源，与我们如何对它的看法息息相关，所以如何对待金钱，也是一种心理学。
 author: Joey Kai
@@ -68,7 +68,7 @@ draft: false
 
 ## 本周读书
 
-![202401171828702](../../assets/2024/202401171828702.png)
+![202401171828702](../assets/2024/202401171828702.png)
 
 智人何以统治地球？
 

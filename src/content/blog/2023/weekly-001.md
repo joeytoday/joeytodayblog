@@ -7,7 +7,7 @@ tags:
   - 政治
   - 社会
   - 书评
-heroImage: {src: '../../assets/2023/cover-weekly001.jpeg', inferSize: true}
+heroImage: {src: '../assets/2023/cover-weekly001.jpeg', inferSize: true}
 author: Joey Kai
 ---
 
@@ -30,7 +30,7 @@ author: Joey Kai
 
 ## 功利主义
 
-功利主义认为公正意味着使功利或福利最大化——为了最大多数人的最大幸福。
+功利主义认为公正意味着使功利或福利最大多数人的最大幸福。
 
 代表人物就是[杰里米·边沁](https://baike.baidu.com/item/杰里米·边沁?fromModule=lemma_search-box)（Jeremy Bentham，1748～1832），他的核心观点就是**道德的最高原则就是使幸福最大化，使快乐总体上超过痛苦**。
 
@@ -38,7 +38,7 @@ author: Joey Kai
 
 一个是**环形监狱**：在该监狱的中间有一个监视塔，这使得看管者可以监视囚犯，而囚犯却看不见他。边沁建议，可以将这个环形监狱交给一个私人的承包商（理想人选就是他自己）来运营，该承包商将管理监狱，以换取罪犯劳动所得的利润，这些囚犯将每天工作 16 个小时。
 
-![202308301913982](../../assets/2023/202308301913982.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Panopticon.jpg/1920px-Panopticon.jpg)
 
 如上图所示，边沁认为这能够更高效地管理囚犯，并通过囚犯给个人换取利润，这增加了社会幸福。不过此设想被更多用在[米歇尔·福柯](https://baike.baidu.com/item/米歇尔·福柯/576152?fromtitle=福柯&fromid=2044)论证权力与规训中。
 
@@ -124,7 +124,7 @@ author: Joey Kai
 
 P.S: 但是绝对贫困状况在变好，很多国家的公共福利支出都在增加。
 
-![202308312225843](../../assets/2023/202308312225843.png)
+![202308312225843](../assets/2023/202308312225843.png)
 
 简单从五个方面概括一下经济不平等可能带来的问题：
 

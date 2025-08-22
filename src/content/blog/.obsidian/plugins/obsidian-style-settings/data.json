@@ -175,10 +175,10 @@
   "baseline-style@@list-marker-color@@light": "#E41F1F",
   "baseline-style@@list-marker-color@@dark": "#E6ABAB",
   "baseline-style@@p-spacing": "1.7rem",
-  "baseline-style@@img-grid": true,
   "baseline-style@@tag-background@@light": "#EFF3FD",
   "baseline-style@@tag-background@@dark": "#3D3D3D",
   "baseline-style@@tag-color@@light": "#6182EF",
   "baseline-style@@tag-color@@dark": "#6182EF",
-  "baseline-style@@tag-radius": "16px"
+  "baseline-style@@tag-radius": "16px",
+  "baseline-style@@img-grid": true
 }
