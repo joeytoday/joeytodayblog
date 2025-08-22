@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "weekly/2023/002.md",
+                "file": "weekly/2023/001.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "002"
+              "title": "001"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "blog-assets/2023/202308301913981.png",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -174,9 +174,9 @@
   },
   "active": "b2b9963ee1743e76",
   "lastOpenFiles": [
-    "blog-assets/2023/202312140000658.jpeg",
-    "weekly/2023/001.md",
     "weekly/2023/002.md",
+    "weekly/2023/001.md",
+    "blog-assets/2023/202312140000658.jpeg",
     "blog-assets/2023/cover-weekly001.jpeg",
     "weekly/2023/012.md",
     "blog-assets/2023/202312271759735.png",
@@ -187,7 +187,6 @@
     "blog-assets/2023/202312271757604.png",
     "blog-assets/2023/202312271757707.png",
     "blog-assets/2023/202312271756067.png",
-    "blog-assets/2023/202312271756194.png",
     "weekly/2023/011.md",
     "weekly/2023/010.md",
     "weekly/2023/009.md",
