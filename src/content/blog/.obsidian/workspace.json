@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1569d4159ce19582",
+        "id": "1224d68590e15549",
         "type": "tabs",
         "children": [
           {
-            "id": "0ee4125ba937e72d",
+            "id": "b63fed92b0e2be90",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -70,8 +70,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -167,8 +166,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0e1d952fea7b8c49",
+  "active": "b63fed92b0e2be90",
   "lastOpenFiles": [
+    "2023/Markdown语法支持.md",
+    "2025/weekly-037-obsidian-config-AI-agent.md",
     "2025/weekly-036-my-note-taking-software.md",
     "2025/weekly-035.md",
     "2025/weekly-034.md",
@@ -193,8 +194,6 @@
     "2024/weekly-013.md",
     "2023/weekly-012.md",
     "2023/weekly-011.md",
-    "2023/weekly-010.md",
-    "2023/weekly-009.md",
     "assets/2025/202508141314794.png",
     "assets/2025/202508141314793.png",
     "assets/2025/202508141314792.png",
