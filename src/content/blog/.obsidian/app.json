@@ -1,6 +1,8 @@
 {
-  "newLinkFormat": "absolute",
-  "attachmentFolderPath": "blog-assets/2023",
+  "newLinkFormat": "relative",
+  "attachmentFolderPath": "assets/2024",
   "livePreview": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true,
+  "promptDelete": false
 }

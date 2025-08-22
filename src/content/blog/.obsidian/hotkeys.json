@@ -25,5 +25,14 @@
       ],
       "key": "D"
     }
-  ]
+  ],
+  "editor:open-search-replace": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "F"
+    }
+  ],
+  "editor:open-search": []
 }

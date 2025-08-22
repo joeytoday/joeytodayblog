@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "weekly/2023/001.md",
+                "file": "weekly/2024/027.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "001"
+              "title": "027"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "blog-assets/2023/202308301913981.png",
+                "query": "assets",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -167,26 +167,40 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:创建新数据库": false,
-      "markdown-importer:打开 Markdown 格式转换器": false,
-      "templater-obsidian:Templater": false,
-      "custom-image-auto-uploader:Custom Image Auto Uploader / 自定义图片上传云端保存插件": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "b2b9963ee1743e76",
   "lastOpenFiles": [
-    "weekly/2023/002.md",
+    "assets/2024/3wm8bx7srjl.png",
+    "weekly/2024/027.md",
+    "assets/2024/202412121938405.png",
+    "assets/2024/202412121937287.png",
+    "assets/2024/202412121936642.png",
+    "assets/2024/202412121935133.png",
+    "assets/2024/202412112207025.png",
+    "assets/2024/202412112206189.png",
+    "assets/2024/202412112246156.png",
+    "assets/2024/202412112205798.png",
+    "assets/2024/202412112205572.png",
+    "assets/2024/202412112158550.png",
+    "weekly/2024/026.md",
+    "weekly/2024/025.md",
+    "weekly/2024/024.md",
+    "weekly/2024/023.md",
+    "weekly/2024/022.md",
+    "weekly/2024/020.md",
+    "weekly/2024/021.md",
+    "weekly/2024/019.md",
+    "weekly/2024/018.md",
+    "weekly/2024/017.md",
+    "weekly/2024/016.md",
+    "weekly/2024/015.md",
+    "weekly/2024/014.md",
+    "weekly/2024/013.md",
     "weekly/2023/001.md",
-    "blog-assets/2023/202312140000658.jpeg",
-    "blog-assets/2023/cover-weekly001.jpeg",
+    "Markdown语法支持.md",
     "weekly/2023/012.md",
-    "blog-assets/2023/202312271759735.png",
-    "blog-assets/2023/202312271758184.png",
-    "blog-assets/2023/202312271758083.png",
-    "blog-assets/2023/202312271758763.png",
-    "blog-assets/2023/202312271755992.png",
-    "blog-assets/2023/202312271757604.png",
-    "blog-assets/2023/202312271757707.png",
-    "blog-assets/2023/202312271756067.png",
     "weekly/2023/011.md",
     "weekly/2023/010.md",
     "weekly/2023/009.md",
@@ -194,19 +208,13 @@
     "weekly/2023/007.md",
     "weekly/2023/006.md",
     "weekly/2023/005.md",
-    "weekly/2023/004.md",
-    "weekly/2023/003.md",
     "blog-assets/202",
-    "blog-assets/2023",
+    "assets/2023",
     "weekly/2023",
-    "weekly/2024/027.md",
     "weekly/2024",
-    "weekly/2025/028.md",
-    "weekly/2025/029.md",
-    "Markdown语法支持.md",
     "weekly/2025",
     "blog-assets/weekly",
-    "blog-assets/2024",
-    "blog-assets/2025"
+    "assets/2024",
+    "assets/2025"
   ]
 }
