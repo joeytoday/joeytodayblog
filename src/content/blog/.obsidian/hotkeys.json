@@ -7,5 +7,23 @@
       "key": "/"
     }
   ],
-  "editor:toggle-comments": []
+  "editor:toggle-comments": [],
+  "command-palette:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": " "
+    }
+  ],
+  "obsidian-image-auto-upload-plugin:Download all images": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ]
 }

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "weekly/2023/001.md",
+                "file": "weekly/2023/002.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "001"
+              "title": "002"
             }
           }
         ]
@@ -174,17 +174,39 @@
   },
   "active": "b2b9963ee1743e76",
   "lastOpenFiles": [
+    "weekly/2023/001.md",
+    "weekly/2023/002.md",
+    "blog-assets/2023/cover-weekly001.jpeg",
+    "weekly/2023/012.md",
+    "blog-assets/2023/202312271759735.png",
+    "blog-assets/2023/202312271758184.png",
+    "blog-assets/2023/202312271758083.png",
+    "blog-assets/2023/202312271758763.png",
+    "blog-assets/2023/202312271755992.png",
+    "blog-assets/2023/202312271757604.png",
+    "blog-assets/2023/202312271757707.png",
+    "blog-assets/2023/202312271756067.png",
+    "blog-assets/2023/202312271756194.png",
+    "weekly/2023/011.md",
+    "weekly/2023/010.md",
+    "weekly/2023/009.md",
+    "weekly/2023/008.md",
+    "weekly/2023/007.md",
+    "weekly/2023/006.md",
+    "weekly/2023/005.md",
+    "weekly/2023/004.md",
+    "weekly/2023/003.md",
+    "blog-assets/202",
+    "blog-assets/2023",
     "weekly/2023",
     "weekly/2024/027.md",
     "weekly/2024",
     "weekly/2025/028.md",
     "weekly/2025/029.md",
-    "weekly/2023/010.md",
     "Markdown语法支持.md",
     "weekly/2025",
     "blog-assets/weekly",
     "blog-assets/2024",
-    "blog-assets/2025/thumbnail.jpg",
     "blog-assets/2025"
   ]
 }
