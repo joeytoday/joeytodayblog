@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "travel/20250321-hongkong.md",
+                "file": "2024/weekly-025.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "20250321-hongkong"
+              "title": "weekly-025"
             }
           }
         ]
@@ -170,8 +170,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "08a7cb73812c51b5",
+  "active": "b2b9963ee1743e76",
   "lastOpenFiles": [
+    "travel/20250321-hongkong.md",
     "2025/weekly-028.md",
     "2025/weekly-037-obsidian-config-AI-agent.md",
     "2025/weekly-036-my-note-taking-software.md",
@@ -197,7 +198,6 @@
     "2024/weekly-015.md",
     "2024/weekly-014.md",
     "2024/weekly-013.md",
-    "2023/weekly-012.md",
     "assets/2025/202508141314794.png",
     "assets/2025/202508141314793.png",
     "assets/2025/202508141314792.png",
