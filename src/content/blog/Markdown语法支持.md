@@ -5,8 +5,9 @@ description: Markdown 是一种轻量级的「标记语言」。
 tags:
   - 工具
   - markdown
-heroImage: {src: './thumbnail.jpg', inferSize: true, color: "#B4C6DA"}
+heroImage: {src: 'blog-assets/2025/thumbnail.jpg', inferSize: true, color: "#B4C6DA"}
 ---
+
 
 ##  基本语法 
 
