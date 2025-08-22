@@ -50,16 +50,19 @@ const primaryColor = data.heroImage?.color ?? 'hsl(var(--primary) / var(--un-tex
 >
   {!!headings.length && <TOC {headings} slot='sidebar' />}
 
-  <Hero {data} {remarkPluginFrontmatter} slot='header' />
+  <!-- 添加自定义类名用于样式定位 -->
+  <Hero 
+    {data} 
+    {remarkPluginFrontmatter} 
+    slot='header' 
+    class="custom-hero" 
+  />
 
   <slot />
 
   <Fragment slot='bottom'>
-    {/* Copyright */}
     <Copyright {data} />
-    {/* Article recommend */}
     <ArticleBottom collections={posts} {id} class='mt-3 sm:mt-6' />
-    {/* Comment */}
     {!isDraft && enableComment && <Comment class='mt-3 sm:mt-6' />}
   </Fragment>
 
@@ -67,3 +70,35 @@ const primaryColor = data.heroImage?.color ?? 'hsl(var(--primary) / var(--un-tex
 </PageLayout>
 
 {integ.mediumZoom.enable && <MediumZoom />}
+
+<!-- 关键：强制覆盖封面图片样式 -->
+<style is:global>
+  /* 1. 定位Hero组件内的图片容器 */
+  .custom-hero .hero-image,  /* 常见的图片容器类名 */
+  .custom-hero .hero-img,
+  .custom-hero [data-hero-image] {
+    /* 固定比例（16:9），可修改为 4:3、2:1 等 */
+    aspect-ratio: 16 / 9 !important; 
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    position: relative !important;
+  }
+
+  /* 2. 强制图片裁切规则 */
+  .custom-hero .hero-image img,
+  .custom-hero .hero-img img,
+  .custom-hero [data-hero-image] img,
+  .custom-hero img[alt="Hero image"] {  /* 针对图片本身 */
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* 核心：保持比例并裁切 */
+    object-position: center !important; /* 裁切时保留中心区域 */
+    /* 取消可能的默认限制 */
+    max-width: none !important;
+    max-height: none !important;
+  }
+</style>
