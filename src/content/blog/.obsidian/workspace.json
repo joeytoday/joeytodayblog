@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Markdown语法支持.md",
+                "file": "weekly/2023/001.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Markdown语法支持"
+              "title": "001"
             }
           }
         ]
@@ -168,13 +168,23 @@
       "command-palette:打开命令面板": false,
       "bases:创建新数据库": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "custom-image-auto-uploader:Custom Image Auto Uploader / 自定义图片上传云端保存插件": false
     }
   },
-  "active": "08a7cb73812c51b5",
+  "active": "b2b9963ee1743e76",
   "lastOpenFiles": [
-    "blog-assets/2025/thumbnail.jpg",
+    "weekly/2023",
+    "weekly/2024/027.md",
+    "weekly/2024",
+    "weekly/2025/028.md",
+    "weekly/2025/029.md",
+    "weekly/2023/010.md",
     "Markdown语法支持.md",
+    "weekly/2025",
+    "blog-assets/weekly",
+    "blog-assets/2024",
+    "blog-assets/2025/thumbnail.jpg",
     "blog-assets/2025"
   ]
 }

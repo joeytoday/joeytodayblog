@@ -1,5 +1,6 @@
 {
   "newLinkFormat": "absolute",
   "attachmentFolderPath": "blog-assets/2025",
-  "livePreview": false
+  "livePreview": false,
+  "alwaysUpdateLinks": true
 }
