@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homeview.md",
+                "file": "2025/weekly-038.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Homeview"
+              "title": "weekly-038"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "weekly-038"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,10 +184,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5efcbc277332637d",
+  "active": "eae56eecd58d640b",
   "lastOpenFiles": [
-    "assets/2025/z8hkbnsfq5s.png",
+    "Homeview.md",
     "2025/weekly-038.md",
+    "assets/2025/z8hkbnsfq5s.png",
     "assets/2025/ylghlu8i4zt.png",
     "assets/2025/p1aen2keee.png",
     "assets/2025/d6mi6xbizjo.png",
@@ -198,7 +198,6 @@
     "assets/2025/2yunz2dttvt.png",
     "assets/2025/202508232120150.png",
     "assets/2025/202508232120149.png",
-    "Homeview.md",
     "2023/weekly-001.md",
     "2025/weekly-037-obsidian-config-AI-agent.md",
     "成瘾：在放纵中寻找平衡.md",
