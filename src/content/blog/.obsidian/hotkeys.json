@@ -17,15 +17,6 @@
       "key": " "
     }
   ],
-  "obsidian-image-auto-upload-plugin:Download all images": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "D"
-    }
-  ],
   "editor:open-search-replace": [
     {
       "modifiers": [
@@ -34,5 +25,14 @@
       "key": "F"
     }
   ],
-  "editor:open-search": []
+  "editor:open-search": [],
+  "obsidian-image-auto-upload-plugin:Download all images": [
+    {
+      "modifiers": [
+        "Alt",
+        "Ctrl"
+      ],
+      "key": "D"
+    }
+  ]
 }

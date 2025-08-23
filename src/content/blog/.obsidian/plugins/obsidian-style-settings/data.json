@@ -180,5 +180,6 @@
   "baseline-style@@tag-color@@light": "#6182EF",
   "baseline-style@@tag-color@@dark": "#6182EF",
   "baseline-style@@tag-radius": "16px",
-  "baseline-style@@img-grid": true
+  "baseline-style@@img-grid": true,
+  "baseline-style@@checkbox-color@@light": "#09A21D"
 }

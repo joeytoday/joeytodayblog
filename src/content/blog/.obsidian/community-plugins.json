@@ -1,5 +1,7 @@
 [
   "obsidian-style-settings",
   "templater-obsidian",
-  "obsidian-image-auto-upload-plugin"
+  "obsidian-image-auto-upload-plugin",
+  "dataview",
+  "open-tab-settings"
 ]

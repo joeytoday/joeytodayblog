@@ -4,20 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "1224d68590e15549",
+        "id": "2be6389140fa1f1e",
         "type": "tabs",
         "children": [
           {
-            "id": "b63fed92b0e2be90",
+            "id": "eae56eecd58d640b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Homeview.md",
+                "mode": "source",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Homeview"
+            }
+          },
+          {
+            "id": "5efcbc277332637d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025/weekly-038.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "weekly-038"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,10 +185,24 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b63fed92b0e2be90",
+  "active": "5efcbc277332637d",
   "lastOpenFiles": [
-    "2023/Markdown语法支持.md",
+    "assets/2025/z8hkbnsfq5s.png",
+    "2025/weekly-038.md",
+    "assets/2025/ylghlu8i4zt.png",
+    "assets/2025/p1aen2keee.png",
+    "assets/2025/d6mi6xbizjo.png",
+    "assets/2025/b62xy90fff.png",
+    "assets/2025/5pbco7pxjsx.png",
+    "assets/2025/99z7qdib99i.png",
+    "assets/2025/2yunz2dttvt.png",
+    "assets/2025/202508232120150.png",
+    "assets/2025/202508232120149.png",
+    "Homeview.md",
+    "2023/weekly-001.md",
     "2025/weekly-037-obsidian-config-AI-agent.md",
+    "成瘾：在放纵中寻找平衡.md",
+    "2023/Markdown语法支持.md",
     "2025/weekly-036-my-note-taking-software.md",
     "2025/weekly-035.md",
     "2025/weekly-034.md",
@@ -189,21 +222,6 @@
     "2024/weekly-018.md",
     "2024/weekly-017.md",
     "2024/weekly-016.md",
-    "2024/weekly-015.md",
-    "2024/weekly-014.md",
-    "2024/weekly-013.md",
-    "2023/weekly-012.md",
-    "2023/weekly-011.md",
-    "assets/2025/202508141314794.png",
-    "assets/2025/202508141314793.png",
-    "assets/2025/202508141314792.png",
-    "assets/2025/202508141314791.png",
-    "assets/2025/202508091255901.png",
-    "assets/2025/202508091245752.png",
-    "assets/2025/202508091640313.png",
-    "assets/2025/202508091152988.png",
-    "assets/2025/202508091153181.png",
-    "assets/2025/202507291518186.jpg",
     "assets/202",
     "blog-assets/202",
     "assets/2023",
