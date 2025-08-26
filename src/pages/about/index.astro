@@ -7,13 +7,14 @@ import mpQrCode from '@/assets/mp-qr-code.jpg';
 import doudou from '@/assets/doudou.jpeg'
 
 import { Comment } from 'astro-pure/advanced'
-import { Button, Collapse, Spoiler, Timeline } from 'astro-pure/user'
+import { Collapse, Spoiler, Timeline } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
 import Substats from '@/components/about/Substats.astro'
 import ToolSection from '@/components/about/ToolSection.astro'
 import FriendList from '@/components/links/FriendList.astro'
 import BooksDisplay from '@/components/BooksDisplay.astro';
 
+// 页面标题配置
 const headings = [
   { depth: 2, slug: 'hobbies', text: 'Hobbies' },
   { depth: 2, slug: 'tools', text: 'Tools' },
@@ -37,38 +38,34 @@ const linksConf = config.integ.links
     如果你是新朋友，欢迎查看更多关于我的信息～欢迎扫描下方二维码关注我的公众号 👇
   </p>
   
-  <!-- 公众号二维码：优化手机端自适应，避免溢出 -->
+  <!-- 公众号二维码：优化手机端自适应 -->
   <div style="text-align: center; margin: 15px 0;">
     <Image 
       src={mpQrCode} 
       width="200" 
       alt="公众号二维码" 
-      class="mx-auto max-w-[80vw]" <!-- 手机端最大宽度不超过屏幕80% -->
+      class="mx-auto max-w-[80vw]"
       loading="lazy"
     />
   </div>
 
   <p>
-    📌 Show, not tell.｜如果有更多想说的，也可以 <a href="mailto:open1v@hotmail.com">📮 给我发邮件</a>
+    📌 Show, not tell.｜如果有更多想说的，也可以 📮 <a href="mailto:open1v@hotmail.com">给我发邮件</a>
     <Spoiler> 🎉 这里是彩蛋内容：祝你今日开心！</Spoiler>
   </p>
   
-  {/* 赞助按钮，跳转 Projects 页面赞助标题下*/}
-  <!-- <Button title='Sponsor Me' class='w-fit' href='/projects#sponsorship' style='ahead' /> -->
-
   {/* 音乐播放器：手机端兼容优化版 */}
   <p>🎵 接下来可以听着音乐继续看：</p>
   <div style="
     width: 100%; 
     max-width: 700px; 
     margin: 15px auto 0; 
-    padding: 0; /* 移除内边距，避免定位冲突 */
+    padding: 0;
     box-sizing: border-box;
     position: relative;
-    /* 手机端最小宽度兜底，避免过窄 */
     min-width: 280px;
   ">
-    <!-- 网易云歌单iframe：修复移动端兼容性 -->
+    <!-- 网易云歌单iframe -->
     <iframe 
       src="https://music.163.com/outchain/player?type=0&id=13382956851&auto=0&height=280" 
       style="
@@ -77,8 +74,7 @@ const linksConf = config.integ.links
         height: 280px; 
         display: block; 
         border-radius: 8px;
-        min-height: 260px; 
-        /* 修复移动端iframe被拦截问题 */
+        min-height: 260px;
         pointer-events: auto;
       "
       frameborder="0"
@@ -86,17 +82,15 @@ const linksConf = config.integ.links
       allowfullscreen="false"
       loading="lazy"
       title="我的音乐清单"
-      <!-- 移动端关键：允许基础交互，避免被浏览器拦截 -->
       sandbox="allow-scripts allow-same-origin allow-popups allow-pointer-lock"
-      <!-- 强制移动端渲染模式 -->
       scrolling="no"
     ></iframe>
 
-    <!-- 加载提示：适配移动端定位，避免遮挡 -->
+    <!-- 加载状态提示 -->
     <div id="musicLoader" style="
       position: absolute; 
       top: 0; 
-      left: 0; /* 取消固定像素，适配所有宽度 */
+      left: 0; 
       right: 0; 
       bottom: 0; 
       background: #fff; 
@@ -107,75 +101,73 @@ const linksConf = config.integ.links
       font-size: 14px; 
       color: #666;
       z-index: 1;
-      /* 确保加载提示在移动端可见 */
       opacity: 1;
       transition: opacity 0.3s ease;
     ">
       音乐清单加载中...</div>
 
-    <!-- 手机端提示：优化字体大小和颜色 -->
+    <!-- 手机端提示 -->
     <p style="
       text-align: center; 
       font-size: 12px; 
       color: #888; 
       margin: 8px 0 0;
-      padding: 0 10px; /* 手机端左右留边，避免文字贴屏 */
+      padding: 0 10px;
     ">
-      点击播放按钮，可切换歌单内歌曲 🎵（播放不了是版权限制）
+      点击播放按钮，可切换歌单内歌曲 🎵
     </p>
   </div>
 
-  <!-- 加载控制脚本：修复移动端onload不触发问题 -->
+  <!-- 音乐播放器加载控制脚本 
+  解决TypeScript类型错误和移动端加载问题
+  包含多重加载检测机制和超时处理
+  -->
   <script>
-    // 类型断言+容错处理，兼容移动端浏览器
-    const musicIframe = document.querySelector('iframe[src*="music.163.com"]');
+    // 类型断言为HTMLIFrameElement解决类型错误
+    const musicIframe = document.querySelector('iframe[src*="music.163.com"]') as HTMLIFrameElement;
     const musicLoader = document.getElementById('musicLoader');
 
     if (musicIframe && musicLoader) {
-      // 方法1：监听iframe加载完成（主流浏览器）
+      // 监听iframe加载完成事件
       musicIframe.onload = function() {
-        musicLoader.style.opacity = '0'; // 渐隐提示，更自然
+        musicLoader.style.opacity = '0';
         setTimeout(() => {
           musicLoader.style.display = 'none';
         }, 300);
       };
 
-      // 方法2：监听iframe内容变化（兼容部分不触发onload的移动端浏览器）
+      // 定期检查iframe内容加载状态
       const checkIframeLoaded = setInterval(() => {
         try {
-          // 尝试访问iframe内容，能访问说明加载完成
-          if (musicIframe.contentWindow.document.body) {
+          if (musicIframe.contentWindow && musicIframe.contentWindow.document.body) {
             musicLoader.style.opacity = '0';
             setTimeout(() => {
               musicLoader.style.display = 'none';
             }, 300);
-            clearInterval(checkIframeLoaded); // 停止检查
+            clearInterval(checkIframeLoaded);
           }
-        } catch (e) {
-          // 跨域访问会报错，忽略即可
-        }
-      }, 500); // 每500ms检查一次
+        } catch (e) {}
+      }, 500);
 
-      // 方法3：超时兜底（避免一直显示加载中）
+      // 超时处理机制
       setTimeout(() => {
         if (musicLoader.style.display !== 'none') {
           musicLoader.innerHTML = '加载超时，点击刷新重试';
-          musicLoader.style.color = '#ff4444'; // 红色提示更明显
-          // 点击重试功能
+          musicLoader.style.color = '#ff4444';
           musicLoader.style.cursor = 'pointer';
           musicLoader.addEventListener('click', () => {
-            musicIframe.src = musicIframe.src; // 重新加载iframe
+            musicIframe.src = musicIframe.src;
             musicLoader.innerHTML = '重新加载中...';
             musicLoader.style.color = '#666';
           });
         }
         clearInterval(checkIframeLoaded);
-      }, 8000); // 8秒超时（适配移动端慢网络）
+      }, 8000);
     }
   </script>
 
 
-  {/* general-talk */}
+  {/* 个人爱好部分 */}
   <h2 id='hobbies'>Hobbies 我的爱好</h2>
   <ul>
     <li>📖 喜欢阅读与电影，经常写随笔，也经常放鸽子。看不到我的随笔，也欢迎看看👉<a href="https://note.joeytoday.com/">📒 我的笔记</a></li>
@@ -185,22 +177,22 @@ const linksConf = config.integ.links
     <li>🐈 家有傲娇小猫，名曰「兜兜」，不粘人但喜欢人，喜欢被拍拍，但最喜欢我（我自封），附上兜兜美照。</li>
   </ul>
 
-  {/* 小猫图片：手机端自适应优化 */}
+  {/* 小猫图片展示 */}
   <div style="text-align: center; margin: 15px 0; padding: 0 10px;">
     <Image 
       src={doudou} 
       width="700" 
       alt="小猫兜兜" 
-      class="mx-auto max-w-full" <!-- 手机端占满屏幕宽度 -->
+      class="mx-auto max-w-full"
       loading="lazy"
-      style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" <!-- 增加阴影，提升视觉 -->
+      style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"
     />
   </div>
 
   <!-- 书籍电影卡片 -->
   <BooksDisplay />
 
-  {/* tools */}
+  {/* 工具展示部分 */}
   <h2 id='tools'>Tools 我的工具</h2>
   <p>Current support tools as follow:</p>
 
@@ -279,7 +271,7 @@ const linksConf = config.integ.links
   />
 
 
-  {/* social-networks 文件在 public/links.json */}
+  {/* 社交媒体部分 */}
   <h2 id='social-networks'>Social Networks 社交媒体</h2>
   <p>
     👏 欢迎关注～有什么想说的，也可以 <a href="https://www.notion.so/joeytoday/310f5493daf44d82a0599d2c034100cb">💬 给我留言</a>
@@ -287,17 +279,16 @@ const linksConf = config.integ.links
 
   <FriendList list={friends[3]} />
 
-  {/* gossips */}
+  {/* 碎碎念部分 */}
   <h2 id='gossips'>Gossips 碎碎念</h2>
   <Collapse title='碎碎念'>
     其实这里的文字只是为了凑这个模块，嘿嘿，看来你打开了这里 😊
   </Collapse>
 
-  {/* about-blog */}
+  {/* 关于博客部分 */}
   <h2 id='about-blog'>About Blog 关于此博客</h2>
   <p>Website history</p>
   
-  <!-- 内容在 site.config.ts -->
   <Timeline events={linksConf.logbook} />
 
   <hr>
@@ -307,6 +298,6 @@ const linksConf = config.integ.links
     搭建有点辛苦，但过程很开心，希望各位网友也阅读开心！🎉 撒花
   </p>
 
-  <!-- 评论系统设置在 site.config.ts -->
+  {/* 评论系统 */}
   <Comment slot='bottom' />
 </PageLayout>

@@ -1,8 +1,8 @@
 /* empty css                                 */
 import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Dg3zV7A2.mjs';
 import 'kleur/colors';
-import { $ as $$Button } from '../chunks/Svg_aXW9aLqX.mjs';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_CXqJ5sHM.mjs';
+import { $ as $$Button } from '../chunks/Svg_B0_CLtDx.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_BLir5kZy.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$404 = createComponent(($$result, $$props, $$slots) => {

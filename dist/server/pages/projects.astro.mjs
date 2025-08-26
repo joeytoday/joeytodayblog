@@ -3,11 +3,11 @@ import { e as createAstro, c as createComponent, m as maybeRenderHead, b as addA
 import 'kleur/colors';
 import '../chunks/index_MaT6fT73.mjs';
 import { $ as $$Image } from '../chunks/_astro_assets_BZyUih0U.mjs';
-import { d as $$Icon, $ as $$Button } from '../chunks/Svg_aXW9aLqX.mjs';
-import { $ as $$CommonPage } from '../chunks/CommonPage_DRaQRbWT.mjs';
+import { d as $$Icon, $ as $$Button } from '../chunks/Svg_B0_CLtDx.mjs';
+import { $ as $$CommonPage } from '../chunks/CommonPage_BMTwpzuV.mjs';
 import { c as cn } from '../chunks/class-merge_ZZ4CtDft.mjs';
 /* empty css                                 */
-import { c as config } from '../chunks/BaseLayout_CXqJ5sHM.mjs';
+import { c as config } from '../chunks/BaseLayout_BLir5kZy.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro$1 = createAstro("https://www.joeytoday.com");

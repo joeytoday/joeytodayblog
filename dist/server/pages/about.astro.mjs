@@ -3,13 +3,41 @@ import { c as createComponent, m as maybeRenderHead, b as addAttribute, a as ren
 import 'kleur/colors';
 import { $ as $$FriendList, l as links } from '../chunks/FriendList_vv8oryJ6.mjs';
 import { c as config } from '../chunks/_virtual_config_BIqm0lli.mjs';
-import { $ as $$Comment } from '../chunks/Comment_D1PzXhjc.mjs';
-import { a as $$Spoiler, b as $$Collapse, c as $$Timeline } from '../chunks/Svg_aXW9aLqX.mjs';
-import { $ as $$CommonPage } from '../chunks/CommonPage_DRaQRbWT.mjs';
-import { $ as $$ToolSection } from '../chunks/ToolSection_ioET_NN7.mjs';
+import '../chunks/index_MaT6fT73.mjs';
+import { $ as $$Image } from '../chunks/_astro_assets_BZyUih0U.mjs';
+import { $ as $$Comment } from '../chunks/Comment_Bf4GmHrO.mjs';
+import { a as $$Spoiler, b as $$Collapse, c as $$Timeline } from '../chunks/Svg_B0_CLtDx.mjs';
+import { $ as $$CommonPage } from '../chunks/CommonPage_BMTwpzuV.mjs';
+import { $ as $$ToolSection } from '../chunks/ToolSection_B0dEdMAY.mjs';
 import 'clsx';
 /* empty css                                 */
 export { renderers } from '../renderers.mjs';
+
+const mpQrCode = new Proxy({"src":"/_astro/mp-qr-code.DjLA1guf.jpg","width":344,"height":344,"format":"jpg"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "/Users/kaiyijing/GitHub/joeytodayblog/src/assets/mp-qr-code.jpg";
+							}
+							
+							return target[name];
+						}
+					});
+
+const doudou = new Proxy({"src":"/_astro/doudou.DffGIIMx.jpeg","width":5230,"height":4032,"format":"jpg","orientation":1}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "/Users/kaiyijing/GitHub/joeytodayblog/src/assets/doudou.jpeg";
+							}
+							
+							return target[name];
+						}
+					});
 
 const $$BooksDisplay = createComponent(($$result, $$props, $$slots) => {
   const movies = [
@@ -83,26 +111,28 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
     喜欢很多美丽而“无用”的事物， <strong>📖 书籍 & 🎬 电影 & 🎵 音乐</strong>，
     希望在这个世界寻找一点乐趣，也<strong>「诚心祝福你，捱得到新天地」</strong>。<br>
 如果你是新朋友，欢迎查看更多关于我的信息～欢迎扫描下方二维码关注我的公众号 👇
-<img src="/src/assets/mp-qr-code.jpeg" width="200px"> </p> <p>
-📌 Show, not tell.｜如果有更多想说的，也可以 <a href="mailto:open1v@hotmail.com">📮 给我发邮件</a> ${renderComponent($$result2, "Spoiler", $$Spoiler, {}, { "default": ($$result3) => renderTemplate` 🎉 这里是彩蛋内容：祝你今日开心！` })} </p>  <p>🎵 接下来可以听着音乐继续看：</p>  <div style="
+</p>  <div style="text-align: center; margin: 15px 0;"> ${renderComponent($$result2, "Image", $$Image, { "src": mpQrCode, "width": "200", "alt": "\u516C\u4F17\u53F7\u4E8C\u7EF4\u7801", "class": "mx-auto max-w-[80vw]", "loading": "lazy" })} </div> <p>
+📌 Show, not tell.｜如果有更多想说的，也可以 <a href="mailto:open1v@hotmail.com">📮 给我发邮件</a> ${renderComponent($$result2, "Spoiler", $$Spoiler, {}, { "default": ($$result3) => renderTemplate` 🎉 这里是彩蛋内容：祝你今日开心！` })} </p> <p>🎵 接下来可以听着音乐继续看：</p> <div style="
     width: 100%; 
     max-width: 700px; 
     margin: 15px auto 0; 
-    padding: 0 8px; 
+    padding: 0;
     box-sizing: border-box;
     position: relative;
-  "> <!-- 关键修改：src 中的 type=0（歌单）+ 你的歌单ID --> <iframe src="https://music.163.com/outchain/player?type=0&id=13382956851&auto=0&height=280" style="
+    min-width: 280px;
+  "> <!-- 网易云歌单iframe --> <iframe src="https://music.163.com/outchain/player?type=0&id=13382956851&auto=0&height=280" style="
         border: 1px solid #eee; 
         width: 100%; 
-        height: 280px; /* 增加高度，容纳多首歌的清单 */
+        height: 280px; 
         display: block; 
         border-radius: 8px;
-        min-height: 260px; /* 手机端最小高度兜底 */
-      " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="false" loading="lazy" title="我的音乐清单"></iframe> <!-- 加载状态提示 --> <div id="musicLoader" style="
+        min-height: 260px;
+        pointer-events: auto;
+      " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="false" loading="lazy" title="我的音乐清单" sandbox="allow-scripts allow-same-origin allow-popups allow-pointer-lock" scrolling="no"></iframe> <!-- 加载状态提示 --> <div id="musicLoader" style="
       position: absolute; 
       top: 0; 
-      left: 8px; 
-      right: 8px; 
+      left: 0; 
+      right: 0; 
       bottom: 0; 
       background: #fff; 
       border-radius: 8px; 
@@ -112,15 +142,18 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
       font-size: 14px; 
       color: #666;
       z-index: 1;
+      opacity: 1;
+      transition: opacity 0.3s ease;
     ">
 音乐清单加载中...</div> <!-- 手机端提示 --> <p style="
       text-align: center; 
       font-size: 12px; 
       color: #888; 
       margin: 8px 0 0;
+      padding: 0 10px;
     ">
 点击播放按钮，可切换歌单内歌曲 🎵（播放不了是版权限制）
-</p> </div>  ${renderScript($$result2, "/Users/kaiyijing/GitHub/joeytodayblog/src/pages/about/index.astro?astro&type=script&index=0&lang.ts")} <h2 id="hobbies">Hobbies 我的爱好</h2> <ul> <li>📖 喜欢阅读与电影，经常写随笔，也经常放鸽子。看不到我的随笔，也欢迎看看👉<a href="https://note.joeytoday.com/">📒 我的笔记</a></li> <li>✈️ 喜欢宅家，但也爱旅行，若有喜爱的朋友相伴，是美事一桩～</li> <li>🎈 日常 J 人，出门就变 P，主打一个什么都行，开心就好!</li> <li>🎵 很爱音乐，只要好听！这里是我的推荐，如果你也想听听看～👉<a href="https://joeytoday.notion.site/music">joeytoday的歌单</a></li> <li>🐈 家有傲娇小猫，名曰「兜兜」，不粘人但喜欢人，喜欢被拍拍，但最喜欢我（我自封），附上兜兜美照。</li> </ul> <img src="https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508020135822.jpeg" width="90%">  ${renderComponent($$result2, "BooksDisplay", $$BooksDisplay, {})} <h2 id="tools">Tools 我的工具</h2> <p>Current support tools as follow:</p> ${renderComponent($$result2, "ToolSection", $$ToolSection, { "class": "mb-5", "title": "Productivity", "tools": [
+</p> </div>  ${renderScript($$result2, "/Users/kaiyijing/GitHub/joeytodayblog/src/pages/about/index.astro?astro&type=script&index=0&lang.ts")} <h2 id="hobbies">Hobbies 我的爱好</h2> <ul> <li>📖 喜欢阅读与电影，经常写随笔，也经常放鸽子。看不到我的随笔，也欢迎看看👉<a href="https://note.joeytoday.com/">📒 我的笔记</a></li> <li>✈️ 喜欢宅家，但也爱旅行，若有喜爱的朋友相伴，是美事一桩～</li> <li>🎈 日常 J 人，出门就变 P，主打一个什么都行，开心就好!</li> <li>🎵 很爱音乐，只要好听！这里是我的推荐，如果你也想听听看～👉<a href="https://joeytoday.notion.site/music">joeytoday的歌单</a></li> <li>🐈 家有傲娇小猫，名曰「兜兜」，不粘人但喜欢人，喜欢被拍拍，但最喜欢我（我自封），附上兜兜美照。</li> </ul> <div style="text-align: center; margin: 15px 0; padding: 0 10px;"> ${renderComponent($$result2, "Image", $$Image, { "src": doudou, "width": "700", "alt": "\u5C0F\u732B\u515C\u515C", "class": "mx-auto max-w-full", "loading": "lazy", "style": "border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" })} </div>  ${renderComponent($$result2, "BooksDisplay", $$BooksDisplay, {})} <h2 id="tools">Tools 我的工具</h2> <p>Current support tools as follow:</p> ${renderComponent($$result2, "ToolSection", $$ToolSection, { "class": "mb-5", "title": "Productivity", "tools": [
     {
       name: "Notion",
       description: "\u4E2A\u4EBA\u7CFB\u7EDF\uFF5C\u4E66\u5F71\u7BA1\u7406\uFF5C\u9879\u76EE\u7BA1\u7406",
@@ -185,21 +218,21 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
   ] })} <h2 id="social-networks">Social Networks 社交媒体</h2> <p>
 👏 欢迎关注～有什么想说的，也可以 <a href="https://www.notion.so/joeytoday/310f5493daf44d82a0599d2c034100cb">💬 给我留言</a> </p> ${renderComponent($$result2, "FriendList", $$FriendList, { "list": friends[3] })} <h2 id="gossips">Gossips 碎碎念</h2> ${renderComponent($$result2, "Collapse", $$Collapse, { "title": "\u788E\u788E\u5FF5" }, { "default": ($$result3) => renderTemplate`
 其实这里的文字只是为了凑这个模块，嘿嘿，看来你打开了这里 😊
-` })} <h2 id="about-blog">About Blog 关于此博客</h2> <p>Website history</p>  ${renderComponent($$result2, "Timeline", $$Timeline, { "events": linksConf.logbook })} <hr> <p>
+` })} <h2 id="about-blog">About Blog 关于此博客</h2> <p>Website history</p> ${renderComponent($$result2, "Timeline", $$Timeline, { "events": linksConf.logbook })} <hr> <p>
 本站出于我一时的热情建立，熬了两个通宵终于初步完成了，希望能成为我记录生活的开始。<br>
 有点类似千禧年代的互联网精神，开源的、互联的，现在想来有点浪漫～<br>
 搭建有点辛苦，但过程很开心，希望各位网友也阅读开心！🎉 撒花
-</p>   ` })}`;
+</p>  ` })}`;
 }, "/Users/kaiyijing/GitHub/joeytodayblog/src/pages/about/index.astro", void 0);
 
 const $$file = "/Users/kaiyijing/GitHub/joeytodayblog/src/pages/about/index.astro";
 const $$url = "/about";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  default: $$Index,
-  file: $$file,
-  url: $$url
+	__proto__: null,
+	default: $$Index,
+	file: $$file,
+	url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const page = () => _page;

@@ -1,10 +1,10 @@
 /* empty css                                 */
 import { e as createAstro, c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead, b as addAttribute } from '../chunks/astro/server_Dg3zV7A2.mjs';
 import 'kleur/colors';
-import { $ as $$Button, d as $$Icon } from '../chunks/Svg_aXW9aLqX.mjs';
+import { $ as $$Button, d as $$Icon } from '../chunks/Svg_B0_CLtDx.mjs';
 import { c as cn } from '../chunks/class-merge_ZZ4CtDft.mjs';
-import { $ as $$BaseLayout, i as integ } from '../chunks/BaseLayout_CXqJ5sHM.mjs';
-import { $ as $$DocsContents } from '../chunks/DocsContents_DrtqZHZv.mjs';
+import { $ as $$BaseLayout, i as integ } from '../chunks/BaseLayout_BLir5kZy.mjs';
+import { $ as $$DocsContents } from '../chunks/DocsContents_BclNi8K-.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro = createAstro("https://www.joeytoday.com");

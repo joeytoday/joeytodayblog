@@ -1,7 +1,7 @@
 /* empty css                                    */
 import { c as createComponent, r as renderComponent, a as renderTemplate, u as unescapeHTML } from '../../chunks/astro/server_Dg3zV7A2.mjs';
 import 'kleur/colors';
-import { $ as $$IndividualPage } from '../../chunks/IndividualPage_Cfi1dBvW.mjs';
+import { $ as $$IndividualPage } from '../../chunks/IndividualPage_De0T2lvH.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const html = () => "<p>It may be recommended to generate policies from <a href=\"https://policymaker.io\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">PolicyMaker.io<span> ↗</span></a>.</p>";
