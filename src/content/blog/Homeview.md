@@ -1,4 +1,7 @@
 ---
+title: 我的写作字数统计
+description: 总共 & 年份总字数统计。
+publishDate: 2025-08-24
 draft: true
 ---
 
