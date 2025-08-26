@@ -31,7 +31,7 @@ const linksConf = config.integ.links
     喜欢很多美丽而“无用”的事物， <strong>📖 书籍 & 🎬 电影 & 🎵 音乐</strong>，
     希望在这个世界寻找一点乐趣，也<strong>「诚心祝福你，捱得到新天地」</strong>。<br/>
     如果你是新朋友，欢迎查看更多关于我的信息～欢迎扫描下方二维码关注我的公众号 👇
-    <img src="https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202501112218896.jpg" width="200px">
+    <img src="/src/assets/mp-qr-code.jpeg" width="200px">
   </p>
   <p>
     📌 Show, not tell.｜如果有更多想说的，也可以 <a href="mailto:open1v@hotmail.com">📮 给我发邮件</a>
@@ -43,14 +43,74 @@ const linksConf = config.integ.links
 
   {/* 音乐播放器 */}
   <p>🎵 接下来可以听着音乐继续看：</p>
+  {/* 音乐播放清单 */}
+        <!-- 多首歌的音乐清单（手机端+PC端适配） -->
+        <div style="
+          width: 100%; 
+          max-width: 700px; 
+          margin: 15px auto 0; 
+          padding: 0 8px; 
+          box-sizing: border-box;
+          position: relative;
+        ">
+          <!-- 关键修改：src 中的 type=0（歌单）+ 你的歌单ID -->
+          <iframe 
+            src="https://music.163.com/outchain/player?type=0&id=13382956851&auto=0&height=280" 
+            style="
+              border: 1px solid #eee; 
+              width: 100%; 
+              height: 280px; /* 增加高度，容纳多首歌的清单 */
+              display: block; 
+              border-radius: 8px;
+              min-height: 260px; /* 手机端最小高度兜底 */
+            "
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen="false"
+            loading="lazy"
+            title="我的音乐清单"
+          ></iframe>
 
-  <p style="text-align: center;" >
-    <iframe 
-    style="border: none; margin: 0;" 
-    width=100%
-    height=86 
-    src="//music.163.com/outchain/player?type=2&id=1359470247&auto=1&height=66"/>
-  </p>
+          <!-- 加载状态提示 -->
+          <div id="musicLoader" style="
+            position: absolute; 
+            top: 0; 
+            left: 8px; 
+            right: 8px; 
+            bottom: 0; 
+            background: #fff; 
+            border-radius: 8px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 14px; 
+            color: #666;
+            z-index: 1;
+          ">
+            音乐清单加载中...</div>
+
+          <!-- 手机端提示 -->
+          <p style="
+            text-align: center; 
+            font-size: 12px; 
+            color: #888; 
+            margin: 8px 0 0;
+          ">
+            点击播放按钮，可切换歌单内歌曲 🎵（播放不了是版权限制）
+          </p>
+        </div>
+
+        <!-- 加载完成隐藏提示 -->
+        <script>
+          const musicIframe = document.querySelector('iframe[src*="music.163.com"]');
+          const musicLoader = document.getElementById('musicLoader');
+
+          if (musicIframe && musicLoader) {
+            musicIframe.onload = () => musicLoader.style.display = 'none';
+            setTimeout(() => musicLoader.style.display = 'none', 3000);
+          }
+        </script>
+  
 
 
   {/* general-talk */}

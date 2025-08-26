@@ -111,6 +111,7 @@ export const integ: IntegrationUserConfig = {
       { date: '2025-08-08', content: '新增赞助栏' },
       { date: '2025-08-09', content: '新增友链，本博客被<a href = "https://www.travellings.cn/">「开往」</a>收录啦～' },
       { date: '2025-08-13', content: '新增 Books & Movies' },
+      { date: '2025-08-13', content: '新增音乐清单 Love Songs' },
     ],
 
 
