@@ -7,7 +7,7 @@ tags:
   - 技术
   - 观点
   - 影评
-heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508232120149.png', inferSize: true}
+heroImage: {src: '../assets/2025/z8hkbnsfq5s.png', inferSize: true}
 publishDate: 2025-08-23
 createdDate: 2025-08-23 19:25
 updatedDate: 2025-08-23 20:13
