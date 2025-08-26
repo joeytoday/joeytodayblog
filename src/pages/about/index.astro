@@ -50,121 +50,125 @@ const linksConf = config.integ.links
   </div>
 
   <p>
-    📌 Show, not tell.｜如果有更多想说的，也可以 📮 <a href="mailto:open1v@hotmail.com">给我发邮件</a>
+    如果有更多想说的，也可以 📮 <a href="mailto:open1v@hotmail.com">给我发邮件</a>
     <Spoiler> 🎉 这里是彩蛋内容：祝你今日开心！</Spoiler>
   </p>
   
-  {/* 音乐播放器：手机端兼容优化版 */}
-  <p>🎵 接下来可以听着音乐继续看：</p>
-  <div style="
-    width: 100%; 
-    max-width: 700px; 
-    margin: 15px auto 0; 
-    padding: 0;
-    box-sizing: border-box;
-    position: relative;
-    min-width: 280px;
-  ">
-    <!-- 网易云歌单iframe -->
-    <iframe 
-      src="https://music.163.com/outchain/player?type=0&id=13382956851&auto=0&height=280" 
-      style="
-        border: 1px solid #eee; 
-        width: 100%; 
-        height: 280px; 
-        display: block; 
-        border-radius: 8px;
-        min-height: 260px;
-        pointer-events: auto;
-      "
-      frameborder="0"
-      allow="autoplay; encrypted-media"
-      allowfullscreen="false"
-      loading="lazy"
-      title="我的音乐清单"
-      sandbox="allow-scripts allow-same-origin allow-popups allow-pointer-lock"
-      scrolling="no"
-    ></iframe>
-
-    <!-- 加载状态提示 -->
-    <div id="musicLoader" style="
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-      right: 0; 
-      bottom: 0; 
-      background: #fff; 
-      border-radius: 8px; 
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
-      font-size: 14px; 
-      color: #666;
-      z-index: 1;
-      opacity: 1;
-      transition: opacity 0.3s ease;
+  {/* 音乐播放器：移动端隐藏（核心修改：添加 media-player-container 类） */}
+  <div class="media-player-container">
+    <p>🎵 接下来可以听着音乐继续看：</p>
+    <div style="
+      width: 100%; 
+      max-width: 700px; 
+      margin: 15px auto 0; 
+      padding: 0;
+      box-sizing: border-box;
+      position: relative;
+      min-width: 280px;
     ">
-      音乐清单加载中...</div>
+      <!-- 网易云歌单iframe -->
+      <div client:load>
+        <iframe 
+          src="https://music.163.com/outchain/player?type=0&id=13382956851&auto=0&height=280" 
+          style="
+            border: 1px solid #eee; 
+            width: 100%; 
+            height: 280px; 
+            display: block; 
+            border-radius: 8px;
+            min-height: 260px;
+            pointer-events: auto;
+          "
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen="false"
+          loading="lazy"
+          title="我的音乐清单"
+          sandbox="allow-scripts allow-same-origin allow-popups allow-pointer-lock"
+          scrolling="no"
+        ></iframe>
+      </div>
 
-    <!-- 手机端提示 -->
-    <p style="
-      text-align: center; 
-      font-size: 12px; 
-      color: #888; 
-      margin: 8px 0 0;
-      padding: 0 10px;
-    ">
-      点击播放按钮，可切换歌单内歌曲 🎵
-    </p>
-  </div>
+      <!-- 加载状态提示 -->
+      <div id="musicLoader" style="
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        background: #fff; 
+        border-radius: 8px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        font-size: 14px; 
+        color: #666;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      ">
+        音乐清单加载中...</div>
 
-  <!-- 音乐播放器加载控制脚本 
-  解决TypeScript类型错误和移动端加载问题
-  包含多重加载检测机制和超时处理
-  -->
-  <script>
-    // 类型断言为HTMLIFrameElement解决类型错误
-    const musicIframe = document.querySelector('iframe[src*="music.163.com"]') as HTMLIFrameElement;
-    const musicLoader = document.getElementById('musicLoader');
+      <!-- 手机端提示（移动端会随播放器一起隐藏，无需额外处理） -->
+      <p style="
+        text-align: center; 
+        font-size: 12px; 
+        color: #888; 
+        margin: 8px 0 0;
+        padding: 0 10px;
+      ">
+        点击播放按钮，可切换歌单内歌曲 🎵
+      </p>
+    </div>
 
-    if (musicIframe && musicLoader) {
-      // 监听iframe加载完成事件
-      musicIframe.onload = function() {
-        musicLoader.style.opacity = '0';
+    <!-- 音乐播放器加载控制脚本 
+    解决TypeScript类型错误和移动端加载问题
+    包含多重加载检测机制和超时处理
+    -->
+    <script>
+      // 类型断言为HTMLIFrameElement解决类型错误
+      const musicIframe = document.querySelector('iframe[src*="music.163.com"]') as HTMLIFrameElement;
+      const musicLoader = document.getElementById('musicLoader');
+
+      if (musicIframe && musicLoader) {
+        // 监听iframe加载完成事件
+        musicIframe.onload = function() {
+          musicLoader.style.opacity = '0';
+          setTimeout(() => {
+            musicLoader.style.display = 'none';
+          }, 300);
+        };
+
+        // 定期检查iframe内容加载状态
+        const checkIframeLoaded = setInterval(() => {
+          try {
+            if (musicIframe.contentWindow && musicIframe.contentWindow.document.body) {
+              musicLoader.style.opacity = '0';
+              setTimeout(() => {
+                musicLoader.style.display = 'none';
+              }, 300);
+              clearInterval(checkIframeLoaded);
+            }
+          } catch (e) {}
+        }, 500);
+
+        // 超时处理机制
         setTimeout(() => {
-          musicLoader.style.display = 'none';
-        }, 300);
-      };
-
-      // 定期检查iframe内容加载状态
-      const checkIframeLoaded = setInterval(() => {
-        try {
-          if (musicIframe.contentWindow && musicIframe.contentWindow.document.body) {
-            musicLoader.style.opacity = '0';
-            setTimeout(() => {
-              musicLoader.style.display = 'none';
-            }, 300);
-            clearInterval(checkIframeLoaded);
+          if (musicLoader.style.display !== 'none') {
+            musicLoader.innerHTML = '加载超时，点击刷新重试';
+            musicLoader.style.color = '#ff4444';
+            musicLoader.style.cursor = 'pointer';
+            musicLoader.addEventListener('click', () => {
+              musicIframe.src = musicIframe.src;
+              musicLoader.innerHTML = '重新加载中...';
+              musicLoader.style.color = '#666';
+            });
           }
-        } catch (e) {}
-      }, 500);
-
-      // 超时处理机制
-      setTimeout(() => {
-        if (musicLoader.style.display !== 'none') {
-          musicLoader.innerHTML = '加载超时，点击刷新重试';
-          musicLoader.style.color = '#ff4444';
-          musicLoader.style.cursor = 'pointer';
-          musicLoader.addEventListener('click', () => {
-            musicIframe.src = musicIframe.src;
-            musicLoader.innerHTML = '重新加载中...';
-            musicLoader.style.color = '#666';
-          });
-        }
-        clearInterval(checkIframeLoaded);
-      }, 8000);
-    }
-  </script>
+          clearInterval(checkIframeLoaded);
+        }, 8000);
+      }
+    </script>
+  </div>
 
 
   {/* 个人爱好部分 */}
@@ -189,7 +193,7 @@ const linksConf = config.integ.links
     />
   </div>
 
-  <!-- 书籍电影卡片 -->
+  {/* 书籍电影卡片 */}
   <BooksDisplay />
 
   {/* 工具展示部分 */}
@@ -287,17 +291,34 @@ const linksConf = config.integ.links
 
   {/* 关于博客部分 */}
   <h2 id='about-blog'>About Blog 关于此博客</h2>
-  <p>Website history</p>
-  
-  <Timeline events={linksConf.logbook} />
-
-  <hr>
   <p>
     本站出于我一时的热情建立，熬了两个通宵终于初步完成了，希望能成为我记录生活的开始。</br>
     有点类似千禧年代的互联网精神，开源的、互联的，现在想来有点浪漫～</br>
     搭建有点辛苦，但过程很开心，希望各位网友也阅读开心！🎉 撒花
   </p>
 
+  <Collapse title='Website history'>
+    <Timeline events={linksConf.logbook} />
+  </Collapse>
+  
+
   {/* 评论系统 */}
   <Comment slot='bottom' />
+
+  {/* 核心：CSS媒体查询 - 移动端隐藏音乐播放器 */}
+  <style>
+    /* 屏幕宽度 ≤ 768px（手机端）时，隐藏整个音乐播放器容器 */
+    @media (max-width: 768px) {
+      .media-player-container {
+        display: none !important; /* !important 确保不被其他样式覆盖 */
+      }
+    }
+
+    /* 屏幕宽度 > 768px（PC端/平板横屏）时，正常显示（默认样式，可省略） */
+    @media (min-width: 769px) {
+      .media-player-container {
+        display: block;
+      }
+    }
+  </style>
 </PageLayout>
