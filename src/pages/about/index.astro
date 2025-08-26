@@ -4,6 +4,8 @@ import config from 'virtual:config'
 
 import { Image } from 'astro:assets';
 import mpQrCode from '@/assets/mp-qr-code.jpg';
+import doudou from '@/assets/doudou.jpeg'
+
 import { Comment } from 'astro-pure/advanced'
 import { Button, Collapse, Spoiler, Timeline } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
@@ -132,7 +134,12 @@ const linksConf = config.integ.links
     <li>🐈 家有傲娇小猫，名曰「兜兜」，不粘人但喜欢人，喜欢被拍拍，但最喜欢我（我自封），附上兜兜美照。</li>
   </ul>
 
-  <img src="https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508020135822.jpeg" width=90%>
+  <Image 
+      src={doudou} 
+      width={700} 
+      alt="小猫兜兜" 
+      class="mx-auto"
+  />
 
   <!-- 书籍电影卡片 -->
   <BooksDisplay />
