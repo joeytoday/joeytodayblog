@@ -3,7 +3,7 @@ title: 模板｜使用Notion建立习惯打卡热力图
 description: 微小习惯改变人生！使用Notion查看自己的习惯打卡～
 author: Joey Kai
 tags:
-  - Notion
+  - 🎯Project/notion-temp
   - 工具
   - Product
 createdDate: 2025-07-10 12:19

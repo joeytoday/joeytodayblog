@@ -4,7 +4,7 @@ description: 个人私藏 Notion-PARA 模板，从项目、任务到笔记 All i
 author: Joey Kai
 tags:
   - 教程
-  - Notion
+  - 🎯Project/notion-temp
 publishDate: 2025-08-20
 createdDate: 2025-08-20 13:08
 updatedDate: 2025-08-20 14:18

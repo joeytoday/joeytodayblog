@@ -6,7 +6,7 @@ tags:
   - 法律
   - 政治
 heroImage: {src: '../assets/2024/202401091112896.jpeg', inferSize: true}
-title: 观影｜傲骨贤妻：美国法律运作的细节
+title: 第三周刊_No.14｜傲骨贤妻：美国法律运作的细节
 description: 推荐这部剧！
 author: Joey Kai
 draft: false

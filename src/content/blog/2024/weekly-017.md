@@ -6,7 +6,7 @@ tags:
   - 工具
   - 效率
 heroImage: { src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202401271751926.jpeg', inferSize: true}
-title: 读书｜如何打造第二大脑
+title: 第三周刊_No.17｜如何打造第二大脑
 description: 我们的大脑是 CPU 而非存储器，应该建立第二大脑作为我们的资源库。
 author: Joey Kai
 draft: false

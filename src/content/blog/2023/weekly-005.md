@@ -6,7 +6,7 @@ tags:
   - 书评
   - 心理
 heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202312132359833.jpeg', inferSize: true }
-title: 读书｜不原谅也没关系：原生家庭自救指南
+title: 第三周刊_No.5｜不原谅也没关系：原生家庭自救指南
 description: 有一句很热门的话，“幸运的人一生都在被童年治愈，不幸的人一生都在治愈童年”，必须要治愈童年的人，大概率就是患上了 CPTSD。
 author: Joey Kai
 draft: false

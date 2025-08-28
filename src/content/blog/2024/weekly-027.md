@@ -5,7 +5,7 @@ tags:
   - 生活
   - 复盘
 heroImage: { src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202412112156751.png', inferSize: true}
-title: 宁愿用一身筋骨作收纳：2024 年终四十问
+title: 第三周刊_No.27｜宁愿用一身筋骨作收纳：2024 年终四十问
 description: 今年过得如梦一般，倏忽就到年末，还是延续年终的复盘，再填一次四十问。
 author: Joey Kai
 draft: false

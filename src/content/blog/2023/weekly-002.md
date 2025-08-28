@@ -1,6 +1,6 @@
 ---
 author: Joey Kai
-title: 读书｜好警察，坏警察：凶案组一年纪实
+title: 第三周刊_No.2｜好警察，坏警察：凶案组一年纪实
 publishDate: 2023-09-08
 description: 这是记者大卫·西蒙在美国的“哥谭市”——巴尔的摩凶案组一年的纪实写作，也是经典美剧《火线》的原著。
 draft: false

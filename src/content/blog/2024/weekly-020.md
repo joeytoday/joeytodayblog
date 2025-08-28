@@ -5,7 +5,7 @@ tags:
   - 影评
   - 观点
 heroImage: { src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202403131051283.jpeg', inferSize: true}
-title: 观影｜男性史诗的乏味：由《沙丘》想到的
+title: 第三周刊_No.20｜男性史诗的乏味：由《沙丘》想到的
 description: 对男的祛魅之后，所有他们被称之为“杰作”的作品，都透露出男权叙事的乏味、千篇一律。
 author: Joey Kai
 draft: false

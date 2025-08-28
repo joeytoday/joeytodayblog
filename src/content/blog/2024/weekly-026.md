@@ -5,7 +5,7 @@ tags:
   - 影评
   - 复盘
 heroImage: { src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202412112144028.png', inferSize: true}
-title: 观影｜如果能让你开心，就是好东西：2024 观影推荐
+title: 第三周刊_No.26｜如果能让你开心，就是好东西：2024 观影推荐
 description: 2024 年共看电影 62 部，剧集 23 部，纪录片 3 部，还有些零零碎碎的访谈，就没记录了。
 author: Joey Kai
 draft: false

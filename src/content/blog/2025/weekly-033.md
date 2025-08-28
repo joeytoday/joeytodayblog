@@ -5,7 +5,7 @@ tags:
   - 生活
   - 摄影
 heroImage: { src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202505092038545.jpg', inferSize: true}
-title: 从白塔到虎跑，记一次随意的徒步
+title: 第三周刊_No.33｜从白塔到虎跑，记一次随意的徒步
 description: 记一次随意的徒步。
 author: Joey Kai
 draft: false

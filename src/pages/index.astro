@@ -6,14 +6,15 @@ import { Quote } from 'astro-pure/advanced'
 import { PostPreview } from 'astro-pure/components/pages'
 import { getBlogCollection, sortMDByDate } from 'astro-pure/server'
 import { Button, Card, Icon, Label } from 'astro-pure/user'
+
 import PageLayout from '@/layouts/BaseLayout.astro'
 import ProjectCard from '@/components/home/ProjectCard.astro'
 import Section from '@/components/home/Section.astro'
 import SkillLayout from '@/components/home/SkillLayout.astro'
 import avatar from '@/assets/avatar.png'
 import config from '@/site-config'
-
 import ToolSection from '@/components/about/ToolSection.astro'
+
 import { Svg } from 'astro-pure/user'
 import { cn } from 'astro-pure/utils'
 import FriendList from '@/components/links/FriendList.astro'
@@ -150,7 +151,8 @@ const linksConf = config.integ.links
             imagePath='/src/assets/projects/notion-temp-books.jpeg'
           />
 
-<!--           <ProjectCard
+          {/*
+          <ProjectCard
             href='https://www.xiaohongshu.com/discovery/item/687eebe80000000013012264?xsec_token=ABXasX90R282Rybry8UfkAsGW8ZbbXyMWXIfbM3xtqOd0'
             heading='🟢 Notion模板｜习惯打卡热力图'
             subheading='微小习惯改变人生！按周、月、半年查看打卡记录，看见时间都去哪儿了～'
@@ -162,11 +164,12 @@ const linksConf = config.integ.links
             heading='🎒 个人物品管理模板'
             subheading='你拥有的东西构成了你，💥东西买的值不值？💰日均成本多少？'
             imagePath='/src/assets/projects/notion-temp-stuffs.jpeg'
-          /> -->
+          />
+          */}
           
         </div>
         
-        <Button title='More Products' class='w-fit self-end' href='/projects' style='ahead' />
+        <Button title='More Projects' class='w-fit self-end' href='/projects' style='ahead' />
       </Section>
 
 

@@ -5,7 +5,7 @@ tags:
   - 观点
   - 生活
 publishDate: 2025-02-26
-title: 读书｜你 Brain rot（脑腐）了吗？数字极简主义指南
+title: 第三周刊_No.30｜你 Brain rot（脑腐）了吗？数字极简主义指南
 description: 2024 年，“Brain rot”（脑腐）当选牛津年度热词，特指因沉迷低质网络内容导致的心智退化。
 author: Joey Kai
 draft: false

@@ -6,7 +6,7 @@ tags:
   - 思考
   - 复盘
 heroImage: { src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508010257396.jpeg', inferSize: true}
-title: 写在新一岁
+title: 第三周刊_No.28｜写在新一岁
 description: 很感谢每一个在我身边的朋友们，哪怕只是经历过一段时光，也是人生的恩赐了。
 author: Joey Kai
 draft: false

@@ -6,7 +6,7 @@ tags:
   - 政治
   - 影评
 heroImage: { src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202406151529180.png', inferSize: true}
-title: 观影｜聊一部没有词条的电影
+title: 第三周刊_No.24｜聊一部没有词条的电影
 description: “为什么就不能这样生活呢？”  
   “我也想那样，可是没办法，因为心太痛了。”
 author: Joey Kai

@@ -7,7 +7,7 @@ tags:
 heroImage:
   src: https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202312271811190.jpeg
   inferSize: true
-title: 读书｜2023 年度书单
+title: 第三周刊_No.12｜2023 年度书单
 description: 今年截止目前共读完 63 本书，大部分都还不错，在做了非常艰难的选择之后，推荐虚构类和非虚构类各 5 本。
 author: Joey Kai
 ---

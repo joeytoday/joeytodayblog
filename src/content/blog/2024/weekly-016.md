@@ -6,7 +6,7 @@ tags:
   - 家庭
   - 思考
 heroImage: { src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202401232013641.jpeg', inferSize: true}
-title: 观点｜妻子是如何“被炼成”的
+title: 第三周刊_No.16｜妻子是如何“被炼成”的
 description: 成为自己，不要成为“妻子”。
 author: Joey Kai
 draft: false
