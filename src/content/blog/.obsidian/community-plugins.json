@@ -3,5 +3,6 @@
   "templater-obsidian",
   "obsidian-image-auto-upload-plugin",
   "dataview",
-  "open-tab-settings"
+  "open-tab-settings",
+  "obsidian-view-mode-by-frontmatter"
 ]
