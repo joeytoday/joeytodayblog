@@ -3,8 +3,10 @@ title: 告别低效！私藏 Notion-PARA 模板，打造个人第二大脑，带
 description: 个人私藏 Notion-PARA 模板，从项目、任务到笔记 All in One。
 author: Joey Kai
 tags:
-  - 教程
-  - 🎯Project/notion-temp
+  - Product
+  - 🎯Project
+  - Notion
+  - 工具
 publishDate: 2025-08-20
 createdDate: 2025-08-20 13:08
 updatedDate: 2025-08-20 14:18

@@ -1,5 +1,5 @@
 ---
-title: 不做“半成品”的人，七月碎碎念
+title: 第三周刊_No.35｜不做“半成品”的人，七月碎碎念
 description: 无所事事但又做了很多事的七月。
 author: Joey Kai
 draft: false

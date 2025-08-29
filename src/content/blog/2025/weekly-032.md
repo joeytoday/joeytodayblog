@@ -3,6 +3,8 @@ publishDate: 2025-04-25
 Author: Joey Kai
 tags:
   - 第三周刊
+  - Product
+  - 🎯Project
   - 工具
   - 效率
   - Notion

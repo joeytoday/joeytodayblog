@@ -3,8 +3,10 @@ title: Notion模板｜全自动可视化图书馆+影视库，月度年度自动
 description: 打造专属知识库，标记完成自动增加到对应月、年，让阅读、观影一目了然，支持本地离线，开箱即用。
 author: Joey Kai
 tags:
-  - 🎯Project/notion-temp
+  - 🎯Project
+  - Product
   - Notion
+  - 工具
 heroImage: {src: '../assets/2025/202508281500282.png', inferSize: true}
 publishDate: 2025-08-28
 createdDate: 2025-08-28 13:04

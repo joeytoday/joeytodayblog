@@ -3,9 +3,10 @@ title: 模板｜如何使用Notion搭建自己的图书馆
 description: 管理自己的图书记录，让每一本读过的书都有记录～
 author: Joey Kai
 tags:
-  - 🎯Project/notion-temp
+  - 🎯Project
   - Pruduct
   - 工具
+  - Notion
 publishDate: 2025-08-04
 createdDate: 2025-07-07 17:52
 updatedDate: 2025-08-01 13:56
