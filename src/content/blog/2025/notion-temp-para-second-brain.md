@@ -17,6 +17,8 @@ heroImage: {src: '/src/assets/projects/notion-temp-para.jpeg', inferSize: true}
 
 今天，我就迫不及待地想和大家分享一款我最近制作的宝藏 Notion 模板，它使用了经过多人验证有效的 PARA 管理方法，让你能够打造自己的第二大脑。
 
+🛒 [购买点击](https://xhslink.com/m/1o7dBKGBSZV)
+
 ## 二、解锁 Notion 模板的超强亮点
 
 ### （一）PARA 打造个人第二大脑
@@ -114,3 +116,5 @@ Notes 功能为你提供了一个自由创作和记录的空间。你可以在�
 这款 Notion 模板，融合了 PARA 系统的科学理念，拥有项目自动倒计时、直观的任务展示、实用的 Resource 数据库以及多功能的 Notes 等诸多亮点，是提升个人管理效率的得力助手。
 
 它不仅能让你轻松应对工作、学习和生活中的各种信息与任务，还能帮助你养成良好的信息管理和自我反思的习惯。轻松、简单帮你打造你的第二大脑。
+
+🛒 [购买点击](https://xhslink.com/m/1o7dBKGBSZV)

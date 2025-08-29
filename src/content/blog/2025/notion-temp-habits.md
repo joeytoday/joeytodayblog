@@ -24,6 +24,7 @@ heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/2025071
 ![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202507101222900.png)
 
 
+
 # 数据库说明
 
 ### Habit Tracker
@@ -41,4 +42,4 @@ heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/2025071
 
 
 
-#### [🛒 购买点击](https://www.xiaohongshu.com/explore/686f4cc50000000012022873?xsec_token=ABGSWRQXZpuOdav7ypGfUUzBOdLCELpL_7slncrxwwE94)
+#### [🛒 购买点击](https://xhslink.com/m/1dEvFTew2Md)
