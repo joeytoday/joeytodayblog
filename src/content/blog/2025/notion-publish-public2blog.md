@@ -6,11 +6,14 @@ draft: false
 publishDate: 2025-08-05
 tags:
   - 教程
-  - 🎯Project/notion-temp
-heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022259864.JPEG', inferSize: true}
+  - 🎯Project
+heroImage: {src: '../assets/2025/The%20Truman's%20show.jpg', inferSize: true}
 createdDate: 2023-09-02
 updatedDate: 2025-08-01 13:54
 ---
+
+![](../assets/2025/The%20Truman's%20show.jpg)
+
 之前写了一篇使用 Notion 搭建个人主页，可以参考：[如何使用Notion【无代码】搭建自己的主页](https://www.joeytoday.com/blog/2025/notion-publish-public)，我最近有了不满意，觉得 Notion 主页的链接太长了，类似这种 https://www.notion.so/xxxxx/xxxxxxxxxxxxxxxxxxxxx ，我更希望我的主页是 https://www.xxxx.xxx 这种短链接的形式。
 
 于是有以下几种方案可选：
