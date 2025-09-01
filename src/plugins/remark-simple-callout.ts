@@ -1,18 +1,19 @@
 import type { Plugin } from 'unified'
+import type { Root, Node } from 'mdast'
 import { toString } from 'mdast-util-to-string'
 import { visit } from 'unist-util-visit'
 
 /**
  * 一个简单版本的callout插件，用于测试插件系统
  */
-const remarkSimpleCallout: Plugin = () => {
+const remarkSimpleCallout: Plugin<[], Root> = () => {
   return (tree) => {
     // 遍历所有的blockquote节点
-    visit(tree, 'blockquote', (node, index, parent) => {
+    visit(tree, 'blockquote', (node: any, index: number | undefined, parent: any) => {
       if (!parent || index === undefined) return
       
       // 检查blockquote的第一个子节点是否为paragraph
-      if (!node.children.length || node.children[0].type !== 'paragraph') return
+      if (!node.children || !node.children.length || node.children[0].type !== 'paragraph') return
       
       const firstParagraph = node.children[0]
       const text = toString(firstParagraph)
@@ -27,7 +28,7 @@ const remarkSimpleCallout: Plugin = () => {
         if (!validTypes.includes(type.toLowerCase())) return
         
         // 构建一个新的div元素作为callout
-        const calloutDiv = {
+        const calloutDiv: any = {
           type: 'div',
           data: {
             hName: 'div',
@@ -40,7 +41,7 @@ const remarkSimpleCallout: Plugin = () => {
         }
         
         // 添加标题元素
-        const titleDiv = {
+        const titleDiv: any = {
           type: 'div',
           data: {
             hName: 'div',
@@ -53,7 +54,7 @@ const remarkSimpleCallout: Plugin = () => {
         calloutDiv.children.push(titleDiv)
         
         // 处理内容部分
-        const contentDiv = {
+        const contentDiv: any = {
           type: 'div',
           data: {
             hName: 'div',

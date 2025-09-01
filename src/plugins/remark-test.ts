@@ -1,4 +1,5 @@
 import type { Plugin } from 'unified'
+import type { Root } from 'mdast'
 import { visit } from 'unist-util-visit'
 
 /**
@@ -12,7 +13,7 @@ const remarkTest: Plugin<[], Root> = () => {
     console.log('Remark Test Plugin: Processing tree')
     
     // 简单地访问文档中的所有段落节点
-    visit(tree, 'paragraph', (node: any, index, parent) => {
+    visit(tree, 'paragraph', (node: any, index) => {
       console.log('Found paragraph node at index:', index)
     })
   }
