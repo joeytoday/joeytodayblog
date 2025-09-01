@@ -17,12 +17,12 @@ heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/2025071
 
 ### Habits
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202507101222529.png)
+![202507101222529](../assets/2025/202507101222529.png)
 
 
 ### Habits Tracker
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202507101222900.png)
+![202507101222900](../assets/2025/202507101222900.png)
 
 
 
@@ -30,16 +30,16 @@ heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/2025071
 
 ### Habit Tracker
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202507101222110.png)
+![202507101222110](../assets/2025/202507101222110.png)
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202507101222266.png)
+![202507101222266](../assets/2025/202507101222266.png)
 
 
 ### Habit Records
 
 点击`Done` 完成今日打卡之后会在此处新增记录，可以修改`Date` ，补上打卡。
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202507101223429.png)
+![202507101223429](../assets/2025/202507101223429.png)
 
 
 

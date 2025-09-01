@@ -9,13 +9,15 @@ tags:
   - 效率
   - Notion
   - 生活
-heroImage: { src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202504252358560.png', inferSize: true}
+heroImage: { src: '../assets/2025/202504252358560.png', inferSize: true}
 title: 第三周刊_No.32｜我给自己购买的物品整了个系统
 description: 使用 Notion 管理自己的购买。
 author: Joey Kai
 draft: false
 ---
 
+> [!note]
+>
 > 本文大约 `1000` 字，预计阅读 `3` 分钟。
 
 ![202504252358560](../assets/2025/202504252358560.png)

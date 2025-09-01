@@ -23,41 +23,41 @@ updatedDate: 2025-08-01 13:54
 <img src="https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022237330.png" alt="｜" style="zoom:50%;" />
 
 设置完之后我的[主页](https://thirdoption.super.site/)（点击查看）大概是长这个样子的，基本和 Notion 主页的内容一致，可以手机打开，可以切换浅色/深色模式，右上角可以搜索（这个开关我真的是找了很久）。
-![查令十字街84号](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022259864.JPEG)
+![202309022259864](../assets/2025/202309022259864.jpg)
 
 下面来介绍一下 Super 的配置，也可以看看官方的指引文档 [Guides](https://super.so/guides)，里面一步步的操作都很详细。
 
 ### 如何配置 Super 
 
 注册完之后会进入个人的主页面，点击❶「Creat site」新建网址，然后点击❷「Edit site」进入主页的编辑设置。
-![编辑页面](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022307189.png)
+![202309022307189](../assets/2025/202309022307189.png)
 
 #### 设置名称、页面和网址 icon。
-![设置名称和icon](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022312932.png)
+![202309022312932](../assets/2025/202309022312932.png)
 
 #### 自定义域名
-![自定义域名](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022313421.png)
+![202309022313421](../assets/2025/202309022313421.png)
 
 #### 设置子页面的下属链接
 比如我的/articles 全链是 https://thirdoption.super.site/articles ，链接到「Articles 文章」。
-![新建子页面链接](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022316055.png)
+![202309022316055](../assets/2025/202309022316055.png)
 
-![子页面链接设置](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022320129.png)
+![202309022320129](../assets/2025/202309022320129.png)
 
 #### 页面样式设置
 可以每个都去点点看看右边显示变化。
-![页面样式设置](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022328071.png)
+![202309022328071](../assets/2025/202309022328071.png)
 
 #### 导航栏显示设置
 各个项目显示和解释。
-![导航栏设置1](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022331315.png)
-![导航栏设置2](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022334518.png)
+![202309022331315](../assets/2025/202309022331315.png)
+![202309022334518](../assets/2025/202309022334518.png)
 
 #### 脚注设置
-![脚注设置](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022339497.png)
+![202309022339497](../assets/2025/202309022339497.png)
 
 #### 显示模式/搜索按钮
-![显示模式/搜索按钮](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202309022343312.png)
+![202309022343312](../assets/2025/202309022343312.png)
 
 ### 最后
 以上就是我主页的设置，感谢阅读。

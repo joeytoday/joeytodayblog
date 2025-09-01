@@ -7,7 +7,7 @@ tags:
   - 第三周刊
   - 生活
   - 思考
-heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202507291516065.jpeg', inferSize: true}
+heroImage: {src: '../assets/2025/202507291518186.jpg', inferSize: true}
 publishDate: 2025-07-29 14:08
 ---
 又有一个月没更新了，最近的一个月感觉过得很长又很短，很长在于月初做的事情现在回忆都有点记不清楚了，很短在于似乎也没有做了很多事情，但已经是月底了。

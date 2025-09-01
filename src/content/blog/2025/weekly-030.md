@@ -9,7 +9,7 @@ title: 第三周刊_No.30｜你 Brain rot（脑腐）了吗？数字极简主义
 description: 2024 年，“Brain rot”（脑腐）当选牛津年度热词，特指因沉迷低质网络内容导致的心智退化。
 author: Joey Kai
 draft: false
-heroImage: { src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202502262116684.png', inferSize: true}
+heroImage: { src: '../assets/2025/202502262116684.png', inferSize: true}
 ---
 
 ![202502262116684](../assets/2025/202502262116684.png)

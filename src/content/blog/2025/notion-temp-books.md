@@ -32,21 +32,21 @@ heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/2025070
 先看看我的图书馆是什么样子的，然后大家可以决定是否要购买。
 
 
-![2025 年阅读 - gallery 视图](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202507071754682.png)
+![202507071754682](../assets/2025/202507071754682.png)
 
 2025 年阅读 - gallery 视图
 
-![阅读情况 - table 视图](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202507071759330.png)
+![202507071759330](../assets/2025/202507071759330.png)
 
 阅读情况 - table 视图
 
 
-![出版社统计](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202507071802993.png)
+![202507071802993](../assets/2025/202507071802993.png)
 
 出版社统计
 
 
-![作者统计](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202507071803027.png)
+![202507071803027](../assets/2025/202507071803027.png)
 
 作者统计
 

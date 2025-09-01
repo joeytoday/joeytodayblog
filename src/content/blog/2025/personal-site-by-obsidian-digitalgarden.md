@@ -7,7 +7,7 @@ tags:
   - 教程
   - 工具
   - Obsidian
-heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508131341889.png', inferSize: true}
+heroImage: {src: './assets/2025/202508131341889.png', inferSize: true}
 publishDate: 2025-08-13
 createdDate: 2022-12-17 12:01
 updatedDate: 2025-08-13 14:20
@@ -17,7 +17,7 @@ updatedDate: 2025-08-13 14:20
 
 👇 是我使用 DG 插件简单搭建的笔记网站，下面来介绍一下搭建与部署的过程。
 
-![我的笔记网站](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508131341889.png)
+![](../assets/2025/202508131341889.png)
 
 ## 前期准备
 首先，你需要的东西有：
@@ -25,11 +25,11 @@ updatedDate: 2025-08-13 14:20
 - Vercel 账户
 - [Obsidian](https://obsidian.md/)，然后进入 OB 设置，Mac 可以使用 `⌘` + `,` 打开设置，关闭【安全模式】后进入社区插件市场。
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508131351703.png)
+![202508131351703](../assets/2025/202508131351703.png)
 
 搜索【Digital Garden】（后称 DG）然后安装：
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508131353525.png)
+![202508131353525](../assets/2025/202508131353525.png)
 
 ## 安装配置【Digital Garden】
 作者也写作了很详细的使用指南，可复制到浏览器打开：
@@ -43,28 +43,28 @@ https://github.com/oleeskild/digitalgarden
 ```
 
 从 OB 进入 DG 插件设置：
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508131403379.png)
+![202508131403379](../assets/2025/202508131403379.png)
 
 ## 配置发布和主页属性
 在 OB 页面中添加属性 `dg-publish` 和 `dg-home`。
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508131406801.png)
+![202508131406801](../assets/2025/202508131406801.png)
 
 配置 DG 笔记设置和外观设置。
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508131408876.png)
+![202508131408876](../assets/2025/202508131408876.png)
 
 ### Note setting
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508131411058.png)
+![202508131411058](../assets/2025/202508131411058.png)
 
 ### Appearance setting
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508131413559.png)
+![202508131413559](../assets/2025/202508131413559.png)
 
 ## 我的主页配置说明
 我在自己的主页筛选了最近更新的笔记和标签，主要是用了【dataview】插件，注意去安装一下，使用的代码是 `dataviewjs` ,具体的配置样式和代码如下：
 
 ### Recent Notes
 样式👇
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508131415666.png)
+![202508131415666](../assets/2025/202508131415666.png)
 
 ```markdown
 dataviewjs
@@ -125,7 +125,7 @@ dv.el("style", `
 
 ### Recent Tags
 样式👇
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508131417898.png)
+![202508131417898](../assets/2025/202508131417898.png)
 
 ```markdown
 dataviewjs
@@ -187,6 +187,6 @@ if (sortedTags.length > 0) {
 
 ## End
 安装完 DG 插件之后侧边栏会出现一个 icon，类似如下：
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508131419299.png)
+![202508131419299](../assets/2025/202508131419299.png)
 
 点击打开，勾选发布，等待一段时间就发布成功啦～这样你的个人网站就已经部署好了🎉

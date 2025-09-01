@@ -8,7 +8,7 @@ tags:
   - Notion
   - 第三周刊
   - 观点
-heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508091234578.png', inferSize: true, color: '#B7A1EC'}
+heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508091234578.png', inferSize: true}
 publishDate: 2025-08-09
 createdDate: 2022-12-17 12:01
 updatedDate: 2025-08-09 16:31

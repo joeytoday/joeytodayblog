@@ -6,13 +6,15 @@ tags:
   - 传记
   - 人物
 publishDate: 2025-06-27
-heroImage: { src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202506272104428.png', inferSize: true}
+heroImage: { src: '../assets/2025/202506272104428.png', inferSize: true}
 title: 第三周刊_No.34｜母女之间：阿克曼、波伏瓦、费兰特，她们这样书写母亲
 description: 母女关系，在我看来是这世上最复杂的关系，没有之一。它不止是我们生命的起点，也是我们确认“自己是谁”的源头。
 author: Joey Kai
 draft: false
 ---
 
+> [!note]
+>
 > 本文大约 `2100` 字，预计阅读 `7` 分钟。
 
 好久不见啊各位～今天想聊聊这个我们可能都绕不开、甚至一想起来就情绪复杂的关系——妈妈和女儿之间的爱恨纠缠。

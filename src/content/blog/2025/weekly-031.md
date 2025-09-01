@@ -5,13 +5,15 @@ tags:
   - 书评
   - 影评
   - 生活
-heroImage: { src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202504171505227.JPG', inferSize: true}
+heroImage: { src: '../assets/2025/202504171505227.jpg', inferSize: true}
 title: 第三周刊_No.31｜最近看了什么？
 description: 没有更新周刊的日子都在干些什么呢？
 author: Joey Kai
 draft: false
 ---
 
+>  [!note]
+>
 >  本文大约 `3200` 字，预计阅读 `11` 分钟。
 
 ![202504171505227](../assets/2025/202504171505227.jpg)

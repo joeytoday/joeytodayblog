@@ -29,17 +29,18 @@ https://www.joeytoday.com/
 指南给的部署步骤，主要是本地的，我需要同步部署在网络上，目前的流程还是会有点麻烦，所以我优化了一下流程，主要操作如下所示。
 
 ### 导入主题仓库到本地
+
 下载 [ GitHub 桌面端](https://desktop.github.com/download/)，点击 `Add` - `Clone Repository`，选择 `URL`，粘贴主题仓库地址，克隆到本地。
 ```
 https://github.com/cworld1/astro-theme-pure.git
 ```
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072311661.png)
+![202508072311661](../assets/2025/202508072311661.png)
 
 ## 同步修改到 GitHub
 然后选择 commit to main，再点击 push origin，同步到 GitHub 仓库，之后每次修改也是这两部操作。
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072320743.png)
+![202508072320743](../assets/2025/202508072320743.png)
 
 打开终端，进入到项目文件夹，也就是上图的 `Local Path` ：
 ```bash
@@ -59,11 +60,11 @@ http://localhost:4321/
 ## 直接部署到 Vercel
 为了防止修改配置后部署失败，建议没修改的时候就直接先部署。没有账号的可以先注册 Vercel，然后新建项目 [New Project](https://vercel.com/new)，在页面 import 刚刚同步的博客仓库。
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072321067.png)
+![202508072321067](../assets/2025/202508072321067.png)
 
 等待部署之后就可以直接查看页面了，初始网页链接是：`project-name/vercel.app`，国内访问可能存在比较慢的问题，所以你可以购买域名，点击右上角的 `Domain` 修改重定向。
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072322484.png)
+![202508072322484](../assets/2025/202508072322484.png)
 
 > [!note] 说明
 > - 关于购买域名可以参考：[如何使用 NameSilo 购买域名？ • joeytoday](https://www.joeytoday.com/blog/2025/domain-purchase-by-namesilo)
@@ -73,21 +74,21 @@ http://localhost:4321/
 具体的配置和修改也可以在 [Getting Started • Astro Theme Pure](https://astro-pure.js.org/docs/setup/getting-started) 这里看到，但有些配置也没有说的太清楚，所以我补充我的设置进行一些说明。主要修改的部分在 `src` 文件夹下。
 ### site.config.ts
 页面整体设置，包括页头和页尾
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072228755.png)
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072230845.png)
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072233120.png)
+![202508072228755](../assets/2025/202508072228755.png)
+![202508072230845](../assets/2025/202508072230845.png)
+![202508072233120](../assets/2025/202508072233120.png)
 
 ### Src/pages 页面配置
 #### Index. Astro
 这个页面是配置主页的，
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072235874.png)
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072236450.png)
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072237885.png)
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072238929.png)
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072239677.png)
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072240322.png)
+![202508072235874](../assets/2025/202508072235874.png)
+![202508072236450](../assets/2025/202508072236450.png)
+![202508072237885](../assets/2025/202508072237885.png)
+![202508072238929](../assets/2025/202508072238929.png)
+![202508072239677](../assets/2025/202508072239677.png)
+![202508072240322](../assets/2025/202508072240322.png)
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072241276.png)
+![202508072241276](../assets/2025/202508072241276.png)
 
 大部分的页面样式都在对应的文件夹下，样式如果实在看不懂可以让 AI 给注释一下。
 
@@ -115,4 +116,4 @@ heroImage: {src: 'https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/2023121
 # End
 折腾完自己的主页之后，还使用 **Obsidian** 的 **【Digitial Garden】** 插件生成了我的笔记网站，可以直接从 Obsidian 发布到网站上，效果如下所示，如果大家感兴趣的话，我可以下期再出一篇教程。
 
-![](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508072339243.png)
+![202508072339243](../assets/2025/202508072339243.png)
