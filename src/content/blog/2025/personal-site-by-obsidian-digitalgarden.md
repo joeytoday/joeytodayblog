@@ -7,7 +7,7 @@ tags:
   - 教程
   - 工具
   - Obsidian
-heroImage: {src: './assets/2025/202508131341889.png', inferSize: true}
+heroImage: {src: '../assets/2025/202508131341889.png', inferSize: true}
 publishDate: 2025-08-13
 createdDate: 2022-12-17 12:01
 updatedDate: 2025-08-13 14:20
