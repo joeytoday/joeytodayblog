@@ -45,6 +45,18 @@ const typographyConfig = {
       'box-sizing': 'border-box',
       ...(typographyCustom.blockquoteStyle === 'normal' ? { 'font-style': 'normal' } : {})
     },
+    '.dark blockquote': {
+      background: '#262625',
+      'border-top': '1px solid rgba(255, 255, 255, 0.1)',
+      'border-right': '1px solid rgba(255, 255, 255, 0.1)',
+      'border-bottom': '1px solid rgba(255, 255, 255, 0.1)'
+    },
+    '.callout': {
+      background: '#EFF3ED'
+    },
+    '.dark .callout': {
+      background: '#262625'
+    },
     // Table
     table: {
       display: 'block',
