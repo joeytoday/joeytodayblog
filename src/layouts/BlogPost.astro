@@ -6,7 +6,8 @@ import type { CollectionEntry } from 'astro:content'
 import 'katex/dist/katex.min.css'
 
 import { Comment, MediumZoom } from 'astro-pure/advanced'
-import { ArticleBottom, Copyright, Hero, TOC } from 'astro-pure/components/pages'
+import { ArticleBottom, Copyright, PageInfo, TOC } from 'astro-pure/components/pages'
+import { FormattedDate, Icon } from 'astro-pure/user'
 import PageLayout from '@/layouts/ContentLayout.astro'
 import { integ } from '@/site-config'
 
@@ -40,7 +41,7 @@ const socialImage = heroImage
     : heroImage.src.src
   : '/images/social-card.png'
 const articleDate = updatedDate?.toISOString() ?? publishDate.toISOString()
-const primaryColor = data.heroImage?.color ?? 'hsl(var(--primary) / var(--un-text-opacity))'
+const primaryColor = data.heroImage?.color ?? '#5E9B43'
 ---
 
 <PageLayout
@@ -50,7 +51,70 @@ const primaryColor = data.heroImage?.color ?? 'hsl(var(--primary) / var(--un-tex
 >
   {!!headings.length && <TOC {headings} slot='sidebar' />}
 
-  <Hero {data} {remarkPluginFrontmatter} slot='header' />
+  <div class='article-info max-lg:mx-auto' slot='header'>
+    <h1 class='text-2xl font-medium sm:mb-2 sm:text-3xl'>
+      {title}
+    </h1>
+
+    <div class='flex flex-wrap gap-x-4 gap-y-2 mt-2 text-xs leading-6 text-muted-foreground'>
+      {data.draft ? <span class='text-red-500'>(Draft)</span> : null}
+      {/* Article date */}
+      <div class='flex items-center gap-1'>
+        <Icon name='calendar' class='size-5' />
+        <FormattedDate class='font-sans' date={publishDate} dateTimeOptions={{ month: 'short' }} />
+        {updatedDate && (
+          <div class='flex items-center gap-1'>
+            <span> / </span>
+            <span>
+              Update
+              <FormattedDate
+                class='font-sans'
+                date={updatedDate}
+                dateTimeOptions={{ month: 'short' }}
+              />
+            </span>
+          </div>
+        )}
+      </div>
+      {/* Times read */}
+      <div class='flex items-center gap-1'>
+        <Icon name='time' class='size-5' />
+        {remarkPluginFrontmatter.minutesRead}
+      </div>
+      {data.language && (
+        <span class='flex items-center gap-1'>
+          <Icon name='earth' class='size-5' />
+          {data.language}
+        </span>
+      )}
+      {!!data.tags?.length && (
+        <span class='flex items-center gap-1'>
+          <Icon name='hashtag' class='size-5' />
+          {data.tags.map((tag: string, i: number) => (
+            <div>
+              <a
+                aria-label={`View more blogs with the tag ${tag}`}
+                class='hover:underline hover:underline-offset-4'
+                data-pagefind-filter='tag'
+                href={`/tags/${tag}`}
+              >
+                {tag}
+              </a>
+              {i < data.tags.length - 1 && '/'}
+            </div>
+          ))}
+        </span>
+      )}
+    </div>
+
+    <div class='mt-3'>
+      <blockquote class='text-base text-muted-foreground'><q>{description}</q></blockquote>
+      {!data.draft && data.comment && <PageInfo class='mt-1' />}
+    </div>
+  </div>
+
+  {/* Dividing line */}
+  <div class='mt-4 w-1/2 border-t max-lg:mx-auto sm:mt-6 sm:w-1/3' slot='header' />
 
   <slot />
 
