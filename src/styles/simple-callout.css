@@ -1,0 +1,72 @@
+/* 简单callout样式 */
+.simple-callout {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+}
+
+/* 标题样式 */
+.simple-callout-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* 内容样式 */
+.simple-callout-content {
+  margin-top: 0.5rem;
+}
+
+/* note类型样式 */
+.simple-callout.simple-callout-note {
+  border-left-width: 4px;
+  border-left-color: #64748b;
+  background-color: #f1f5f9;
+}
+
+.simple-callout.simple-callout-note .simple-callout-title {
+  color: #64748b;
+}
+
+/* tip类型样式 */
+.simple-callout.simple-callout-tip {
+  border-left-width: 4px;
+  border-left-color: #0ea5e9;
+  background-color: #eff6ff;
+}
+
+.simple-callout.simple-callout-tip .simple-callout-title {
+  color: #0ea5e9;
+}
+
+/* caution类型样式 */
+.simple-callout.simple-callout-caution {
+  border-left-width: 4px;
+  border-left-color: #f59e0b;
+  background-color: #fffbeb;
+}
+
+.simple-callout.simple-callout-caution .simple-callout-title {
+  color: #f59e0b;
+}
+
+/* danger类型样式 */
+.simple-callout.simple-callout-danger {
+  border-left-width: 4px;
+  border-left-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.simple-callout.simple-callout-danger .simple-callout-title {
+  color: #ef4444;
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+  .simple-callout {
+    padding: 0.75rem;
+  }
+}

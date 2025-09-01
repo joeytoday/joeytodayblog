@@ -14,8 +14,8 @@
               "type": "markdown",
               "state": {
                 "file": "Homeview.md",
-                "mode": "preview",
-                "source": true
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
               "title": "Homeview"

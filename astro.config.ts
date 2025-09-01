@@ -11,6 +11,7 @@ import remarkMath from 'remark-math'
 // Local integrations
 // Local rehype & remark plugins
 import rehypeAutolinkHeadings from './src/plugins/rehype-auto-link-headings.ts'
+import remarkSimpleCallout from './src/plugins/remark-simple-callout'
 // Shiki
 import {
   addCopyButton,
@@ -70,10 +71,9 @@ export default defineConfig({
   },
   // Markdown Options
   markdown: {
-    remarkPlugins: [remarkMath],
+    remarkPlugins: [remarkMath, remarkSimpleCallout],
     rehypePlugins: [
       [rehypeKatex, {}],
-      rehypeHeadingIds,
       [
         rehypeAutolinkHeadings,
         {

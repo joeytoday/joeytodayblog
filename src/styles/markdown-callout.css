@@ -1,0 +1,69 @@
+/* Markdown Callout 样式 */
+.aside {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-style: solid;
+  padding: 1rem;
+}
+
+.aside-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.aside-content {
+  margin-top: 0.5rem;
+}
+
+/* Note 类型样式 */
+.aside.aside-note {
+  border-left-width: 0.5rem;
+  border-left-color: #6b7280;
+  border-color: #6b7280;
+  background-color: rgba(107, 114, 128, 0.1);
+}
+
+.aside.aside-note .aside-title {
+  color: #6b7280;
+}
+
+/* Tip 类型样式 */
+.aside.aside-tip {
+  border-left-width: 0.5rem;
+  border-left-color: #d664a9;
+  border-color: #d664a9;
+  background-color: rgba(214, 100, 169, 0.1);
+}
+
+.aside.aside-tip .aside-title {
+  color: #d664a9;
+}
+
+/* Caution 类型样式 */
+.aside.aside-caution {
+  border-left-width: 0.5rem;
+  border-left-color: #f59e0b;
+  border-color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.1);
+}
+
+.aside.aside-caution .aside-title {
+  color: #f59e0b;
+}
+
+/* Danger 类型样式 */
+.aside.aside-danger {
+  border-left-width: 0.5rem;
+  border-left-color: #e11d48;
+  border-color: #e11d48;
+  background-color: rgba(225, 29, 72, 0.1);
+}
+
+.aside.aside-danger .aside-title {
+  color: #e11d48;
+}
