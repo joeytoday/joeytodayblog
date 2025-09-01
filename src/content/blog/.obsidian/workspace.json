@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "personal-site-by-obsidian-digitalgarden"
             }
+          },
+          {
+            "id": "3108ffe0fc29c167",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025/notion-publish-public.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "notion-publish-public"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -68,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "202508131341889.png",
+                "query": "202307242039427",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -186,10 +200,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c4cff917a6285f62",
+  "active": "3108ffe0fc29c167",
   "lastOpenFiles": [
-    "Homeview.md",
     "2025/personal-site-by-obsidian-digitalgarden.md",
+    "Homeview.md",
     "2025/personal-site-by-astro-pure.md",
     "2025/mac-alfred.md",
     "assets/2025/04d683k0prrn.png",

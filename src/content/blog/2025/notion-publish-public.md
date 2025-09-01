@@ -95,7 +95,7 @@ Notion 有分享到互联网的功能，而且模块可以自由组合，我自�
 
 我自己有一个电子书库，此时只需要链接过来，然后调整视图，使用 `Filter` 筛选，使用 `Sort` 排序，使用 `Properties` 选择显示的属性。
 
-![202307242039427](../assets/2025/202307242039427.gif)
+![202307242039427](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202307242039427.gif)
 
 # 我的主页使用指南
 
@@ -147,8 +147,9 @@ Notion 有分享到互联网的功能，而且模块可以自由组合，我自�
 
 最后也没有什么想说的了，下面是我的主页，感兴趣可以点进去看看。
 
-```ad-info
-往期教程，目前主页已关闭，可参考我的[音乐推荐页面](https://joeytoday.notion.site/music)
-```
+>[!caution] 注意
+>
+>往期教程，目前主页已关闭，可参考我的[音乐推荐页面](https://joeytoday.notion.site/music)
+
 
 使用 Notion 公开主页搭建自己域名的博客参考：[如何通过 Notion【无代码】搭建个人博客](https://www.joeytoday.com/blog/2025/notion-publish-public2blog)
