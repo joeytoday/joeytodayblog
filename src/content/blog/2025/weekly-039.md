@@ -12,9 +12,7 @@ updatedDate: 2025-08-29 20:31
 
 
 
-> [!note]
->
-> 最近脑子里在播放吴青峰的《逃亡》这首歌，有点喜欢～
+最近脑子里在播放吴青峰的《逃亡》这首歌，有点喜欢～
 
 ## 🤔 想什么
 
@@ -46,7 +44,7 @@ updatedDate: 2025-08-29 20:31
 
 在大学的时候读过一首诗，当时很大缓解了我的焦虑，也把这首诗送给当下有点着急的朋友们，Life is a run：
 
-<img src="../assets/2025/202508242141406.jpg" style="zoom:25%;" />
+<img src="https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202508242141406.jpeg" style="zoom:25%;" />
 
 ### 后发优势 & 后发劣势
 
