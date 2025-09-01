@@ -34,11 +34,14 @@ const typographyConfig = {
     // Blockquote
     blockquote: {
       position: 'relative',
+      'border-top': '1px solid #E3E8EF',
+      'border-right': '1px solid #E3E8EF',
+      'border-bottom': '1px solid #E3E8EF',
       'border-left': '4px solid #5E9B43',
       'border-radius': '8px',
       'padding-inline': '1.6rem',
       'padding-block': '1rem',
-      background: 'rgba(94, 155, 67, 0.05)',
+      background: '#EFF3ED',
       'box-sizing': 'border-box',
       ...(typographyCustom.blockquoteStyle === 'normal' ? { 'font-style': 'normal' } : {})
     },
