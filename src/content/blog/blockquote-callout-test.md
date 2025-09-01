@@ -7,6 +7,8 @@ publishDate: 2025-09-01
 
 # Blockquote Callout 测试
 
+> Test
+
 以下是新的blockquote格式callout的测试：
 
 >[!note] 这是一个普通提示

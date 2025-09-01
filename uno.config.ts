@@ -34,25 +34,13 @@ const typographyConfig = {
     // Blockquote
     blockquote: {
       position: 'relative',
-      overflow: 'hidden',
-      'border-width': '1px',
-      'border-left': 'inherit',
-      'border-radius': 'var(--radius)',
+      'border-left': '4px solid #5E9B43',
+      'border-radius': '8px',
       'padding-inline': '1.6rem',
-      'box-shadow': '0 5px 0 ' + bgMuted,
+      'padding-block': '1rem',
+      background: 'rgba(94, 155, 67, 0.05)',
+      'box-sizing': 'border-box',
       ...(typographyCustom.blockquoteStyle === 'normal' ? { 'font-style': 'normal' } : {})
-    },
-    'blockquote::after': {
-      color: fgMuted,
-      position: 'absolute',
-      content: '"”"',
-      top: '2.6rem',
-      right: '-1.4rem',
-      'font-size': '10rem',
-      'font-family':
-        '"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif',
-      transform: 'rotate(-15deg)',
-      opacity: '0.1'
     },
     // Table
     table: {
