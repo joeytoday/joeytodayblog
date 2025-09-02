@@ -42,7 +42,7 @@ export const theme: ThemeUserConfig = {
     //   content: ''
     // }
   ],
-  customCss: [],
+  customCss: ['/styles/linkpreview.css'],
 
   /** Configure the header of your site. */
   header: {
