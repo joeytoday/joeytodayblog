@@ -173,17 +173,15 @@ const linksConf = config.integ.links
       </Section>
 
 
+      {/* 我的博客列表 */}
       {
         allPostsByDate.length > 0 && (
           <Section title='Posts'>
-
-            <ul class='flex flex-col gap-y-1.5 sm:gap-y-2'>
+            <a>
               {allPostsByDate.map((p) => (
-                <li class='flex flex-col gap-x-2 sm:flex-row'>
-                  <PostPreview post={p} detailed />
-                </li>
+                <PostPreview post={p} simple class='sm:flex-col' key={p.id} />
               ))}
-            </ul>
+            </a>
             <Button title='More Posts' class='w-fit self-end'href='/blog' style='ahead' />
           </Section>
         )
