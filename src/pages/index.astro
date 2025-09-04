@@ -179,7 +179,7 @@ const linksConf = config.integ.links
           <Section title='Posts'>
             <a>
               {allPostsByDate.map((p) => (
-                <PostPreview post={p} simple class='sm:flex-col' key={p.id} />
+                <PostPreview post={p} simple/>
               ))}
             </a>
             <Button title='More Posts' class='w-fit self-end'href='/blog' style='ahead' />
