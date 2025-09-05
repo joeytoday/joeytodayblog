@@ -32,7 +32,7 @@ const typographyConfig = {
     // 三级标题颜色设置（增加优先级）及字体大小
     h3: {
       color: 'hsl(var(--h3-color) / var(--un-text-opacity, 1)) !important',
-      'font-size': '1.6rem' // 设置三级标题字体大小
+      'font-size': '1.6rem !important',  // 设置三级标题字体大小
     },
     'h1>a,h2>a,h3>a,h4>a,h5>a,h6>a': {
       'margin-inline-start': '0.75rem',
