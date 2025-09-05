@@ -50,8 +50,8 @@ export const theme: ThemeUserConfig = {
       { title: 'Blog', link: '/blog' },
       //{ title: 'Docs', link: '/docs' },
       { title: 'Projects', link: '/projects' },
-      { title: 'Tags', link: '/tags' },
-      //{ title: 'Achieves', link: '/archives' },
+      //{ title: 'Tags', link: '/tags' },
+      { title: 'Achieves', link: '/archives' },
       { title: 'Notes', link: 'https://note.joeytoday.com/' },
       { title: 'Links', link: '/links'},
       { title: 'About', link: '/about' }
@@ -112,6 +112,8 @@ export const integ: IntegrationUserConfig = {
       { date: '2025-08-09', content: '新增友链，本博客被<a href = "https://www.travellings.cn/">「开往」</a>收录啦～' },
       { date: '2025-08-13', content: '新增 Books & Movies' },
       { date: '2025-08-13', content: '新增音乐清单 Love Songs' },
+      { date: '2025-09-05', content: '新增博客simple显示，在首页不显示封面' },
+      { date: '2025-09-06', content: '修改页面字体为「寒蝉正楷体」，修改三级标题和加粗样式颜色' },
     ],
 
 
