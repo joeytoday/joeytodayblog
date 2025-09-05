@@ -10,11 +10,28 @@ const bgMuted = 'hsl(var(--muted) / var(--un-bg-opacity, 1))'
 
 const typographyConfig = {
   cssExtend: {
+
+    // 添加字体大小设置
+    'p, li, blockquote, dd': {
+      'font-size': '20px', // 可以直接设置具体数值
+    },
+    // 添加字体设置
+    html: {
+      fontFamily: 'ChillKai, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    },
+    body: {
+      fontFamily: 'ChillKai, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    },
+
     // Title
     'h2,h3,h4,h5,h6': {
       'scroll-margin-top': '3rem',
       'font-weight': '500',
       color: fg
+    },
+    // 三级标题颜色设置（增加优先级）
+    h3: {
+      color: 'hsl(var(--h3-color) / var(--un-text-opacity, 1)) !important'
     },
     'h1>a,h2>a,h3>a,h4>a,h5>a,h6>a': {
       'margin-inline-start': '0.75rem',
@@ -31,6 +48,7 @@ const typographyConfig = {
     'h1:target>a,h2:target>a,h3:target>a,h4:target>a,h5:target>a,h6:target>a': {
       opacity: 1
     },
+
     // Blockquote
     blockquote: {
       position: 'relative',
@@ -95,6 +113,7 @@ const typographyConfig = {
       'margin-top': '.5em',
       'margin-bottom': '.5em'
     },
+
     // Inline code
     ...(typographyCustom.inlineCodeBlockStyle === 'modern' && {
       ':not(pre)>code::before,:not(pre)>code::after': {
@@ -124,7 +143,7 @@ const typographyConfig = {
     },
     strong: {
       'font-weight': '600',
-      color: fg
+      color: '#C91D2A'
     },
     a: {
       'font-weight': '500',
@@ -213,7 +232,7 @@ export default defineConfig({
     'rounded-t-2xl',
     'rounded-b-2xl',
     // Typography
-    'text-base',
+    'text-xl',
     'prose'
   ]
 })
