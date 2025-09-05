@@ -144,7 +144,10 @@ const typographyConfig = {
     },
     strong: {
       'font-weight': '600',
-      color: '#C91D2A'
+      color: '#C91D2A' // 浅色模式颜色
+    },
+    '.dark strong': {
+      color: '#DF5D5C' // 暗色模式颜色
     },
     a: {
       'font-weight': '500',
