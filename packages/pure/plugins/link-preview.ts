@@ -73,6 +73,31 @@ const getContent = (el: HTMLElement | null) => el?.getAttribute('content')
 const urlOrNull = (url: string | null | undefined) => (url?.slice(0, 8) === 'https://' ? url : null)
 
 /**
+ * 特别处理豆瓣链接的图片爬取
+ */
+async function getDoubanImage(html: any, pageUrl: string): Promise<string | null> {
+  // 检查是否是豆瓣图书链接
+  if (pageUrl.includes('book.douban.com/subject/')) {
+    // 查找图书封面图片
+    const bookCover = html.querySelector('img[rel="v:photo"]') as HTMLElement | null
+    if (bookCover && bookCover.getAttribute('src')) {
+      return urlOrNull(bookCover.getAttribute('src') || null)
+    }
+  }
+  
+  // 检查是否是豆瓣影视链接
+  if (pageUrl.includes('movie.douban.com/subject/')) {
+    // 查找影视封面图片
+    const movieCover = html.querySelector('img[rel="v:image"]') as HTMLElement | null
+    if (movieCover && movieCover.getAttribute('src')) {
+      return urlOrNull(movieCover.getAttribute('src') || null)
+    }
+  }
+  
+  return null
+}
+
+/**
  * Loads and parses an HTML page to return Open Graph metadata.
  * @param pageUrl URL to parse
  */
@@ -87,11 +112,18 @@ async function parseOpenGraph(pageUrl: string) {
 
   const title = getMetaProperty('og:title') || html.querySelector('title')?.textContent
   const description = getMetaProperty('og:description') || getMetaName('description')
-  const image = urlOrNull(
+  
+  // 首先尝试使用Open Graph图片
+  let image = urlOrNull(
     getMetaProperty('og:image:secure_url') ||
       getMetaProperty('og:image:url') ||
       getMetaProperty('og:image')
   )
+  
+  // 如果没有Open Graph图片或链接是豆瓣的，尝试特殊处理豆瓣链接
+  if (!image && (pageUrl.includes('douban.com/subject/'))) {
+    image = await getDoubanImage(html, pageUrl)
+  }
   const imageAlt = getMetaProperty('og:image:alt')
   const video = urlOrNull(
     getMetaProperty('og:video:secure_url') ||

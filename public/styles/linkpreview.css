@@ -1,0 +1,120 @@
+/* Link Preview Styles */
+.link-preview-container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.link-preview {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border, #e5e7eb);
+  max-width: 100%;
+  height: 140px;
+  transition: all 0.2s ease;
+}
+
+.link-preview:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.link-preview img {
+  width: 35%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.link-preview a {
+  display: flex;
+  height: 100%;
+  text-decoration: none;
+  color: var(--text-muted, #6b7280);
+  flex-grow: 1;
+}
+
+.link-preview a:hover {
+  color: var(--text-muted, #6b7280);
+}
+
+.link-preview__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  gap: 0.25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.link-preview a:hover .link-preview__content {
+  background-color: var(--background-muted, #f9fafb);
+}
+
+.link-preview header {
+  font-weight: 500;
+  color: var(--text-primary, #111827);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.link-preview a:hover header {
+  color: var(--primary, #3b82f6);
+}
+
+.link-preview__description {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.link-preview__domain {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* No image mode */
+.link-preview-container[data-nopic="true"] .link-preview img {
+  display: none;
+}
+
+.link-preview-container[data-nopic="true"] .link-preview a {
+  width: 100%;
+}
+
+/* Error state */
+.link-preview--error {
+  padding: 0.5rem;
+  background-color: var(--background-destructive, #fef2f2);
+  border-color: var(--border-destructive, #fecaca);
+}
+
+.link-preview--error a {
+  color: var(--text-destructive, #dc2626);
+}
+
+/* No metadata state */
+.link-preview--no-metadata {
+  padding: 0.5rem;
+  background-color: var(--background-muted, #f9fafb);
+  border-color: var(--border, #e5e7eb);
+}
+
+@media (max-width: 640px) {
+  .link-preview {
+    max-width: 100%;
+  }
+  
+  .link-preview img {
+    width: 40%;
+  }
+}

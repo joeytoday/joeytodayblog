@@ -1,54 +1,14 @@
-# Astro Theme Pure (Integration Package)
+# joeytoday的个人博客内容
 
-A simple, fast and powerful blog theme built by Astro.
+## Changelog
+- 2025-08-01: 初始版本，包含基础的博客内容
 
-[![GitHub deployments](https://img.shields.io/github/deployments/cworld1/astro-theme-pure/production?style=flat&logo=vercel&label=vercel)](https://astro-pure.js.org/)
-[![NPM Version](https://img.shields.io/npm/v/astro-pure?style=flat)](https://www.npmjs.com/package/astro-pure)
-[![GitHub License](https://img.shields.io/github/license/cworld1/astro-theme-pure?style=flat)](https://github.com/cworld1/astro-theme-pure/blob/main/LICENSE)
+- 2025-09-01:
+  - [x] 修改页面的主题颜色 #5F9B43
+  - [x] 修改了 blockquote 样式
+  - [x] 在 md 文件中增加原生 Callout 显示，通过 `>[!note]` 使用
+  - [x] 修复暗色模式下 blockquote & callout 背景显示
+![md原生callout显示](https://joey-md-asset.oss-cn-hangzhou.aliyuncs.com/img/202509021806573.png)
 
-![img](https://github.com/user-attachments/assets/6c42b061-df7e-4696-a29b-bff07fe17d88)
+- 2025-09-02: md 原生新增 LinkPreview 显示功能，通过 ```linkpreview``` 语法使用
 
-## Usage
-
-### Use with theme template
-
-See [Getting Started](https://astro-pure.js.org/docs/setup/getting-started).
-
-### Use with common Astro project
-
-Set up tailwindcss in your project.
-
-```js
-// tailwind.config.mjs
-
-/** @type {import('tailwindcss').Config} */
-const config = {
-  content: [
-    // Add astro-pure components in the tailwindcss render config
-    './node_modules/astro-pure/components/**/*.astro'
-  ]
-}
-
-export default config
-```
-
-UnoCSS is more recommended, and TailwindCSS method will be removed soon.
-
-See [User Components](https://astro-pure.js.org/docs/integrations/components) & [Advanced Components](https://astro-pure.js.org/docs/integrations/advanced) to learn how to use.
-
-> Some part of Advanced Components may require Astro Integration config.
-
-## Cli
-
-```shell
-# See all commands
-astro-pure help
-# Get the info of astro-pure
-astro-pure info
-# Create a new post in the blog
-astro-pure new [options]
-```
-
-## License
-
-This project is licensed under the Apache 2.0 License.
