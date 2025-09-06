@@ -33,6 +33,17 @@
   font-family: 'ChillKai', 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
+/* LinkPreview 测试样式 - 使用颜色变化来确认样式是否应用 */
+.link-preview-container .link-preview a .link-preview__content header {
+  font-size: 1.2rem !important;
+  line-height: 1.6;
+}
+
+.link-preview-container .link-preview a .link-preview__content .link-preview__description {
+  font-size: 1rem !important;
+  line-height: 1.5;
+}
+
 
 /* Animation */
 @keyframes fade-in-up {

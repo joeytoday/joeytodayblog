@@ -11,7 +11,6 @@
   ],
   "entries": {
     "file:///users/kaiyijing/github/joeytodayblog/src/content/blog/homeview.md": "blog",
-    "file:///users/kaiyijing/github/joeytodayblog/src/content/blog/blockquote-callout-test.md": "blog",
     "file:///users/kaiyijing/github/joeytodayblog/src/content/blog/2023/markdown%e8%af%ad%e6%b3%95%e6%94%af%e6%8c%81.md": "blog",
     "file:///users/kaiyijing/github/joeytodayblog/src/content/blog/2023/weekly-004.md": "blog",
     "file:///users/kaiyijing/github/joeytodayblog/src/content/blog/2023/weekly-002.md": "blog",
@@ -65,6 +64,9 @@
     "file:///users/kaiyijing/github/joeytodayblog/src/content/blog/2025/weekly-038.md": "blog",
     "file:///users/kaiyijing/github/joeytodayblog/src/content/blog/2025/weekly-039.md": "blog",
     "file:///users/kaiyijing/github/joeytodayblog/src/content/blog/travel/20250321-hongkong.md": "blog",
+    "file:///users/kaiyijing/github/joeytodayblog/src/content/blog/linkpreview.md": "blog",
+    "file:///users/kaiyijing/github/joeytodayblog/src/content/blog/callout-test.md": "blog",
+    "file:///users/kaiyijing/github/joeytodayblog/src/content/blog/2025/weekly-040.md": "blog",
     "file:///users/kaiyijing/github/joeytodayblog/src/content/docs/advanced/faq.md": "docs",
     "file:///users/kaiyijing/github/joeytodayblog/src/content/docs/advanced/customize.mdx": "docs",
     "file:///users/kaiyijing/github/joeytodayblog/src/content/docs/setup/configuration.mdx": "docs",
@@ -79,8 +81,6 @@
     "file:///users/kaiyijing/github/joeytodayblog/src/content/docs/integrations/code.mdx": "docs",
     "file:///users/kaiyijing/github/joeytodayblog/src/content/docs/integrations/components.mdx": "docs",
     "file:///users/kaiyijing/github/joeytodayblog/src/content/docs/integrations/links.mdx": "docs",
-    "file:///users/kaiyijing/github/joeytodayblog/src/content/docs/integrations/others.mdx": "docs",
-    "file:///users/kaiyijing/github/joeytodayblog/src/content/blog/linkpreview.md": "blog"
-
+    "file:///users/kaiyijing/github/joeytodayblog/src/content/docs/integrations/others.mdx": "docs"
   }
 }

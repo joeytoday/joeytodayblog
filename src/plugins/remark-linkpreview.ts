@@ -109,7 +109,7 @@ const remarkLinkpreview: Plugin<[], Root> = () => {
               hName: 'article',
               hProperties: {
                 className: `link-preview flex overflow-hidden rounded-lg border max-sm:max-w-sm sm:flex-row`,
-                style: 'height: 140px;'
+                style: 'height: 160px;'
               }
             },
             children: []
@@ -125,7 +125,7 @@ const remarkLinkpreview: Plugin<[], Root> = () => {
                   src: meta.image,
                   alt: meta.imageAlt || '',
                   className: 'm-0',
-                  style: 'width: 35%; height: 100%; object-fit: cover;'
+                  style: 'width: 30%; height: 100%; object-fit: cover;'
                 }
               },
               children: []
@@ -160,25 +160,25 @@ const remarkLinkpreview: Plugin<[], Root> = () => {
             children: []
           }
           
-          // 添加标题
+          // 添加标题 - 添加text-sm类来设置字体大小
           const header: any = {
             type: 'div',
             data: {
               hName: 'header',
               hProperties: {
-                className: 'line-clamp-1 font-medium text-foreground transition-colors group-hover:text-primary',
+                className: 'line-clamp-1 font-medium text-sm text-foreground transition-colors group-hover:text-primary',
               }
             },
             children: [{ type: 'text', value: meta.title }]
           }
           
-          // 添加描述
+          // 添加描述 - 添加text-xs类来设置字体大小
           const description: any = {
             type: 'p',
             data: {
               hName: 'p',
               hProperties: {
-                className: 'link-preview__description line-clamp-2 m-0',
+                className: 'link-preview__description line-clamp-2 m-0 text-xs',
               }
             },
             children: [

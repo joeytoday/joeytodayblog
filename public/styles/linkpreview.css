@@ -12,7 +12,7 @@
   border-radius: 0.5rem;
   border: 1px solid var(--border, #e5e7eb);
   max-width: 100%;
-  height: 140px;
+  height: 160px;
   transition: all 0.2s ease;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .link-preview img {
-  width: 35%;
+  width: 30%;
   height: 100%;
   object-fit: cover;
   flex-shrink: 0;
@@ -53,7 +53,9 @@
   background-color: var(--background-muted, #f9fafb);
 }
 
-.link-preview header {
+/* 使用更具体的选择器确保样式生效 */
+.link-preview-container .link-preview header {
+  font-size: 0.875rem !important;
   font-weight: 500;
   color: var(--text-primary, #111827);
   line-height: 1.4;
@@ -67,8 +69,9 @@
   color: var(--primary, #3b82f6);
 }
 
-.link-preview__description {
-  font-size: 0.875rem;
+/* 使用更具体的选择器确保样式生效 */
+.link-preview-container .link-preview .link-preview__description {
+  font-size: 0.5rem !important;
   line-height: 1.4;
   margin: 0;
   display: -webkit-box;
